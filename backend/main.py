@@ -16,7 +16,7 @@ ANNOT_FILE    = DATA_DIR / "labels.jsonl"
 PROGRESS_FILE = DATA_DIR / "progress.jsonl"
 LABELS_CONFIG = DATA_DIR / "labels.json"
 
-CHUNK_SIZE = 200
+CHUNK_SIZE = 10
 write_lock = threading.RLock()
 
 # Default labels — override by placing a labels.json file in the data directory

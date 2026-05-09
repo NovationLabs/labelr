@@ -1,25 +1,1000 @@
-{"index": 0, "text": "How do I reset my password? I've tried the forgot password link but never received the email."}
-{"index": 1, "text": "The app crashes every time I try to upload a file larger than 10MB. This is a critical issue for our team."}
-{"index": 2, "text": "Would be great if we could export data as CSV in addition to JSON. That would make it much easier to open in Excel."}
-{"index": 3, "text": "Absolutely love the new dashboard! The charts are clear and the response time is much faster than before."}
-{"index": 4, "text": "I've been charged twice for this month's subscription. Please refund the duplicate payment immediately."}
+{"index": 0, "text": "How do I reset my password? I tried the forgot password link but never received the email."}
+{"index": 1, "text": "The app crashes every time I upload a file larger than 10MB. Critical issue for our team."}
+{"index": 2, "text": "Would be great to export data as CSV in addition to JSON. Much easier to open in Excel."}
+{"index": 3, "text": "Absolutely love the new dashboard! Charts are clear and response time is way faster than before."}
+{"index": 4, "text": "I've been charged twice this month. Please refund the duplicate payment immediately."}
 {"index": 5, "text": "Is there a way to set up email notifications when a new item is assigned to me?"}
-{"index": 6, "text": "The search function doesn't seem to work with special characters like accents (é, ü, ñ). Gets no results every time."}
+{"index": 6, "text": "The search function doesn't work with accented characters like é, ü, ñ. No results every time."}
 {"index": 7, "text": "It would be really useful to have a dark mode option for night usage."}
-{"index": 8, "text": "Onboarding was smooth and the documentation is well written. Got everything running in under 10 minutes."}
-{"index": 9, "text": "My account has been locked for 3 days and support hasn't responded to any of my emails. Completely unacceptable."}
-{"index": 10, "text": "Can you add support for two-factor authentication? Security is a priority for us."}
+{"index": 8, "text": "Onboarding was smooth and documentation is well written. Got everything running in under 10 minutes."}
+{"index": 9, "text": "My account has been locked for 3 days and support hasn't responded. Completely unacceptable."}
+{"index": 10, "text": "Can you add support for two-factor authentication? Security is a priority for our organization."}
 {"index": 11, "text": "The bulk import feature works perfectly. Saved us hours of manual data entry."}
-{"index": 12, "text": "Where can I find the API documentation? I couldn't find a link on the website."}
-{"index": 13, "text": "Clicking 'Save' sometimes does nothing — no confirmation, no error, the changes are just lost."}
-{"index": 14, "text": "Please add keyboard shortcuts for the most common actions, it would speed up our workflow a lot."}
+{"index": 12, "text": "Where can I find the API documentation? Couldn't find a link anywhere on the website."}
+{"index": 13, "text": "Clicking Save sometimes does nothing, no confirmation, no error, changes are just lost."}
+{"index": 14, "text": "Please add keyboard shortcuts for common actions, it would speed up our workflow a lot."}
 {"index": 15, "text": "The mobile version is finally usable! Great improvement over the previous release."}
 {"index": 16, "text": "I cannot log in at all since the last update. Password is correct but it just reloads the login page."}
 {"index": 17, "text": "Would love the ability to group items into folders or projects."}
 {"index": 18, "text": "Response times from the support team have been excellent lately. Really appreciate the help."}
 {"index": 19, "text": "The notification badge keeps showing unread messages even after I've read them all."}
 {"index": 20, "text": "How do I invite other team members to the workspace?"}
-{"index": 21, "text": "Data export is extremely slow — a 500-row export takes over 2 minutes. Needs to be fixed urgently."}
+{"index": 21, "text": "Data export is extremely slow, a 500-row export takes over 2 minutes. Needs to be fixed urgently."}
 {"index": 22, "text": "It would be helpful to have filters in the stats view to narrow down by date range or contributor."}
 {"index": 23, "text": "The UI is very clean and intuitive. New team members picked it up without any training."}
-{"index": 24, "text": "Billing address cannot be updated — the form throws a validation error no matter what I enter."}
+{"index": 24, "text": "Billing address cannot be updated, the form throws a validation error no matter what I enter."}
+{"index": 25, "text": "How do I change the language settings? I don't see an option in the preferences menu."}
+{"index": 26, "text": "The auto-save feature stopped working after the last update. Lost an hour of work yesterday."}
+{"index": 27, "text": "Would be fantastic if the tool supported Zapier integrations to connect with our other apps."}
+{"index": 28, "text": "Excellent customer support! My issue was resolved within 20 minutes. Very impressed."}
+{"index": 29, "text": "I'm unable to delete my account. The delete button in settings does nothing."}
+{"index": 30, "text": "What is the maximum file size I can upload? The documentation isn't clear on this."}
+{"index": 31, "text": "The dashboard is completely blank after I log in. No data is showing up at all."}
+{"index": 32, "text": "Please consider adding a timeline or Gantt view for project planning purposes."}
+{"index": 33, "text": "The new color scheme is much easier on the eyes. Great design choice."}
+{"index": 34, "text": "I was billed for an annual plan but only signed up for monthly. Need this corrected now."}
+{"index": 35, "text": "Can I use the API without a paid subscription? Looking to test before committing."}
+{"index": 36, "text": "Tables are not rendering correctly on Safari, columns are misaligned and text is cut off."}
+{"index": 37, "text": "Add the ability to pin important items to the top of the list would be very helpful."}
+{"index": 38, "text": "Just migrated from a competitor and the import process was seamless. Well done!"}
+{"index": 39, "text": "The page keeps timing out when I try to run a report on more than 1000 rows."}
+{"index": 40, "text": "How do I export a PDF version of my report? Can't find the option anywhere."}
+{"index": 41, "text": "Dropdown menus are cut off on small screens, can't see all the options."}
+{"index": 42, "text": "Would appreciate a built-in spell checker in the text fields."}
+{"index": 43, "text": "The loading speed has improved dramatically. Site feels much snappier now."}
+{"index": 44, "text": "My subscription was cancelled without any notice. I never requested this cancellation."}
+{"index": 45, "text": "Is it possible to set custom permissions for individual team members?"}
+{"index": 46, "text": "Images uploaded in comments are not displaying, just showing broken image icons."}
+{"index": 47, "text": "Please add an undo/redo feature. Accidentally deleted data with no way to recover it."}
+{"index": 48, "text": "The tutorial walkthrough was incredibly helpful for getting started. More of those please!"}
+{"index": 49, "text": "My payment failed but I'm still being charged. Need urgent resolution."}
+{"index": 50, "text": "How do I set up recurring reminders for tasks?"}
+{"index": 51, "text": "The app is completely unresponsive on Firefox. Works fine on Chrome though."}
+{"index": 52, "text": "A Slack integration would make it much easier to get notified without checking the app constantly."}
+{"index": 53, "text": "Really impressed with how quickly new features are being shipped. Keep it up!"}
+{"index": 54, "text": "The invoice for last month shows the wrong amount. Need this corrected for our accounting."}
+{"index": 55, "text": "What file formats are supported for document uploads?"}
+{"index": 56, "text": "Copy-paste from Excel into the data grid is completely broken, data goes into wrong columns."}
+{"index": 57, "text": "Would love a way to set working hours so I only receive notifications during business hours."}
+{"index": 58, "text": "The new onboarding checklist is brilliant. Makes it so much easier for new users."}
+{"index": 59, "text": "I've been locked out of my account and the recovery email isn't arriving. This is urgent."}
+{"index": 60, "text": "Can I bulk-update the status of multiple items at once?"}
+{"index": 61, "text": "The calendar view doesn't load on mobile. Just shows a spinning loader indefinitely."}
+{"index": 62, "text": "An activity log showing who changed what and when would be very useful for auditing."}
+{"index": 63, "text": "The product has improved enormously over the past year. Glad we stuck with it."}
+{"index": 64, "text": "I was charged after cancelling my subscription. Please process a refund immediately."}
+{"index": 65, "text": "How does the data backup work? Is my data automatically backed up?"}
+{"index": 66, "text": "Sorting by date is not working correctly, items appear in random order."}
+{"index": 67, "text": "A batch action to archive multiple completed items at once would save a lot of time."}
+{"index": 68, "text": "The help center articles are clear and well-organized. Found the answer quickly."}
+{"index": 69, "text": "The app is freezing every few minutes and forcing me to refresh. Making it unusable."}
+{"index": 70, "text": "What is the difference between the Pro and Business plans?"}
+{"index": 71, "text": "When I try to print a report, the layout breaks completely and content is cut off."}
+{"index": 72, "text": "Please add a way to customize the color of labels and tags."}
+{"index": 73, "text": "Best tool I've used for this kind of work. The interface is just fantastic."}
+{"index": 74, "text": "I'm being asked to upgrade despite being on an annual plan with months remaining."}
+{"index": 75, "text": "Is there a way to merge two accounts? We have duplicates across our organization."}
+{"index": 76, "text": "Attachments are disappearing after saving. This has happened on multiple occasions."}
+{"index": 77, "text": "A comment threading feature would make collaboration on items much more organized."}
+{"index": 78, "text": "Just wanted to say the recent update made a huge positive difference. Great work team."}
+{"index": 79, "text": "My entire dataset was deleted after clicking what I thought was a filter. Need recovery help."}
+{"index": 80, "text": "How can I share a read-only view with external stakeholders?"}
+{"index": 81, "text": "The date picker is broken on iOS, tapping dates doesn't register correctly."}
+{"index": 82, "text": "It would be great to have conditional logic in forms, to show/hide fields based on input."}
+{"index": 83, "text": "Customer support chat response time is impressive. Got help within minutes."}
+{"index": 84, "text": "I've received three identical invoices for the same period. Please investigate."}
+{"index": 85, "text": "Can I schedule automatic reports to be sent by email weekly?"}
+{"index": 86, "text": "The password strength meter is stuck on weak even when I enter a very strong password."}
+{"index": 87, "text": "Would love the ability to create reusable templates for frequently used item types."}
+{"index": 88, "text": "The streamlined workflow in the latest version is a game changer for our team."}
+{"index": 89, "text": "We haven't been able to access our account for the past 6 hours. Urgent!"}
+{"index": 90, "text": "How do I transfer ownership of a workspace to another team member?"}
+{"index": 91, "text": "Keyboard navigation through the form fields is completely broken using Tab."}
+{"index": 92, "text": "A comparison feature to view two items side by side would help with quality review."}
+{"index": 93, "text": "Very satisfied with the overall reliability. Haven't experienced downtime in months."}
+{"index": 94, "text": "I was charged for seats I never activated. Need a credit applied to my account."}
+{"index": 95, "text": "What is the data retention policy? How long is data kept after account deletion?"}
+{"index": 96, "text": "The webhook is not firing even though it's configured correctly. Tested multiple times."}
+{"index": 97, "text": "Allow us to set a default view per user, some of us prefer list, others prefer grid."}
+{"index": 98, "text": "The recent performance improvements are very noticeable. Pages load almost instantly now."}
+{"index": 99, "text": "My API key was suddenly revoked with no warning. All our integrations are now broken."}
+{"index": 100, "text": "How do I configure SSO for our organization?"}
+{"index": 101, "text": "Uploading a file gets stuck at 99% and never completes. Tried on multiple browsers."}
+{"index": 102, "text": "Adding GitHub integration would allow us to link commits directly to items."}
+{"index": 103, "text": "The documentation improvements are excellent. Much easier to find what I need."}
+{"index": 104, "text": "I've been trying to downgrade my plan for a week. The option isn't available in my account."}
+{"index": 105, "text": "Is there a way to add custom metadata fields to items?"}
+{"index": 106, "text": "The search index seems outdated, searching for recent items returns no results."}
+{"index": 107, "text": "A built-in timer to track time spent on items would be very useful for billing clients."}
+{"index": 108, "text": "Absolutely love the new sidebar navigation. Makes switching between sections much faster."}
+{"index": 109, "text": "Our data appears to be missing since this morning. This is a serious data loss situation."}
+{"index": 110, "text": "Can multiple users edit the same item at the same time?"}
+{"index": 111, "text": "The multi-select checkbox disappears when hovering near the edge of an item row."}
+{"index": 112, "text": "It would be helpful if tags could be organized into groups or categories."}
+{"index": 113, "text": "The reliability of the service has been outstanding. Zero issues for the past quarter."}
+{"index": 114, "text": "Upgraded to Business plan but features still show as locked. Need access urgently."}
+{"index": 115, "text": "How do I enable notifications for mentions only, not all activity?"}
+{"index": 116, "text": "Long text in cells is being truncated with no way to expand and read the full content."}
+{"index": 117, "text": "A public roadmap would help us plan around upcoming features."}
+{"index": 118, "text": "The API response times are consistently fast and reliable. Great engineering work."}
+{"index": 119, "text": "My team lost access to a critical project after a permissions change. Need immediate help."}
+{"index": 120, "text": "What is the maximum number of users I can add to a workspace?"}
+{"index": 121, "text": "When I filter by tag, the results include items that don't have that tag."}
+{"index": 122, "text": "Adding a status history per item to track how it evolved over time would be very useful."}
+{"index": 123, "text": "This tool has genuinely transformed how our team collaborates. Highly recommend it."}
+{"index": 124, "text": "I was billed in USD but our contract specifies EUR. Need a corrected invoice."}
+{"index": 125, "text": "How can I embed a view of my data into an external website?"}
+{"index": 126, "text": "The CSV import fails silently, no error message, no confirmation, nothing happens."}
+{"index": 127, "text": "A Kanban board view as an alternative to the list view would make it much more visual."}
+{"index": 128, "text": "Super happy with the recent UI refresh. Clean, modern, and easy to navigate."}
+{"index": 129, "text": "All our reports show 0 data since the update deployed yesterday afternoon."}
+{"index": 130, "text": "Is it possible to have multiple dashboards for different teams?"}
+{"index": 131, "text": "The drag-and-drop reordering is very laggy with more than 50 items in the list."}
+{"index": 132, "text": "An integration with Google Sheets would be extremely valuable for our reporting workflow."}
+{"index": 133, "text": "I really appreciate the proactive status updates during maintenance windows."}
+{"index": 134, "text": "We're locked out of our production environment since the outage started. URGENT."}
+{"index": 135, "text": "How do I set up a webhook to receive real-time updates?"}
+{"index": 136, "text": "The rich text editor loses all formatting when I paste content from Word."}
+{"index": 137, "text": "Allow us to assign items to multiple people instead of just one assignee."}
+{"index": 138, "text": "The quick search feature is incredibly useful. Saves so much time navigating."}
+{"index": 139, "text": "My credit card was charged three times for the same subscription renewal."}
+{"index": 140, "text": "What happens to my data if I cancel my subscription?"}
+{"index": 141, "text": "The session keeps expiring after 10 minutes even though I haven't changed my settings."}
+{"index": 142, "text": "It would be great to have a way to duplicate an existing item as a starting template."}
+{"index": 143, "text": "Very smooth upgrade experience. Billing was transparent and the new features are great."}
+{"index": 144, "text": "Something went wrong during our team's migration and half the data is now corrupted."}
+{"index": 145, "text": "Is there a sandbox or test environment available for development?"}
+{"index": 146, "text": "When exporting to Excel, merged cells are lost and the layout breaks."}
+{"index": 147, "text": "A native app for macOS would be a significant improvement over using the browser."}
+{"index": 148, "text": "The new batch operations feature saved our team hours of repetitive work. Thank you!"}
+{"index": 149, "text": "I'm getting a 500 error on every page since my account was migrated to the new server."}
+{"index": 150, "text": "How do I configure role-based access control for my organization?"}
+{"index": 151, "text": "The mobile app drains battery very quickly compared to other apps."}
+{"index": 152, "text": "A way to set dependencies between items so one can't start before another is complete."}
+{"index": 153, "text": "The guided setup wizard was really helpful for first-time configuration."}
+{"index": 154, "text": "My account was suspended without any explanation. Need this resolved immediately."}
+{"index": 155, "text": "Can I get a breakdown of storage usage per workspace?"}
+{"index": 156, "text": "After the update, clicking on a notification no longer takes me to the relevant item."}
+{"index": 157, "text": "Being able to define custom workflows with automated transitions would be a killer feature."}
+{"index": 158, "text": "Support team went above and beyond to help us with our migration. Truly outstanding."}
+{"index": 159, "text": "All our automated workflows have stopped triggering since this morning. Production impact."}
+{"index": 160, "text": "What are the GDPR compliance certifications you hold?"}
+{"index": 161, "text": "The graph rendering is broken, bars in the chart are overlapping the labels."}
+{"index": 162, "text": "A recurring item feature would help us manage regular tasks without creating them manually."}
+{"index": 163, "text": "Loving the new grid layout. Makes it much easier to see everything at a glance."}
+{"index": 164, "text": "I've been overcharged by 40% this month compared to my plan price. Please review."}
+{"index": 165, "text": "How do I set up automatic archiving of completed items after 30 days?"}
+{"index": 166, "text": "Images within exported PDFs appear very low resolution compared to the original."}
+{"index": 167, "text": "Offline mode or at least offline read access would be extremely useful when travelling."}
+{"index": 168, "text": "The collaborative editing feature is flawless. Multiple people can work simultaneously."}
+{"index": 169, "text": "We cannot submit any forms since yesterday's update. All form submissions fail silently."}
+{"index": 170, "text": "Do you support SAML-based SSO? Our IT team requires this for onboarding."}
+{"index": 171, "text": "The autocomplete in the search bar is suggesting items from archived projects incorrectly."}
+{"index": 172, "text": "A guest access mode with limited permissions would help us involve external contractors."}
+{"index": 173, "text": "The new tagging system is incredibly flexible. Exactly what we needed for organization."}
+{"index": 174, "text": "A bulk action modified data across the wrong items. Need to revert these changes urgently."}
+{"index": 175, "text": "How do I generate a usage report for my team's activity this quarter?"}
+{"index": 176, "text": "The app is sending duplicate email notifications for every event. My inbox is flooded."}
+{"index": 177, "text": "Let users choose their preferred date format, MM/DD/YYYY vs DD/MM/YYYY matters a lot."}
+{"index": 178, "text": "The step-by-step guides in the knowledge base are excellent. Very thorough."}
+{"index": 179, "text": "Production database appears to be offline. We cannot access any data right now."}
+{"index": 180, "text": "Is there an option to white-label the interface with our company branding?"}
+{"index": 181, "text": "The navigation breadcrumb is showing the wrong path when inside nested folders."}
+{"index": 182, "text": "A changelog widget in the app showing latest updates would be really appreciated."}
+{"index": 183, "text": "We've been using this for 2 years and it keeps getting better. Thank you for listening to feedback."}
+{"index": 184, "text": "I cannot cancel my subscription, every attempt returns an error message."}
+{"index": 185, "text": "How can I see who last modified an item and when?"}
+{"index": 186, "text": "The table export is including hidden columns. Only visible columns should be exported."}
+{"index": 187, "text": "Adding a priority field with custom levels would help us triage items more effectively."}
+{"index": 188, "text": "The user onboarding experience has improved so much. New hires are autonomous within a day."}
+{"index": 189, "text": "Our service level agreement requires 99.9% uptime. We've had 4 outages this month."}
+{"index": 190, "text": "What is the process for requesting a custom enterprise contract?"}
+{"index": 191, "text": "The rich text formatting toolbar disappears randomly while typing in the description field."}
+{"index": 192, "text": "Being able to create custom report templates and save them for repeated use would be great."}
+{"index": 193, "text": "Great to see accessibility improvements in the latest update. Screen reader works much better."}
+{"index": 194, "text": "We received incorrect data in our API responses starting at midnight. Data integrity issue."}
+{"index": 195, "text": "Can I import data directly from a Google Sheet instead of downloading and re-uploading?"}
+{"index": 196, "text": "After archiving a project, its items still appear in global search results."}
+{"index": 197, "text": "The ability to add custom CSS to personalize the interface would be very appreciated."}
+{"index": 198, "text": "I love that you include a demo dataset on signup. Makes it so easy to explore the features."}
+{"index": 199, "text": "All users in our organization have been logged out simultaneously and cannot log back in."}
+{"index": 200, "text": "How do I set up a custom domain for our workspace URL?"}
+{"index": 201, "text": "Column widths reset to default every time I refresh the page."}
+{"index": 202, "text": "A public API to access our data would open up so many automation possibilities."}
+{"index": 203, "text": "Delighted by the attention to detail in the latest redesign. Every interaction feels polished."}
+{"index": 204, "text": "My account was charged after I specifically requested a pause on billing. Need a refund."}
+{"index": 205, "text": "What does the audit log include and how far back does it go?"}
+{"index": 206, "text": "Inline editing of cells in the table view would save so many clicks."}
+{"index": 207, "text": "The time tracking integration with Toggl would make this tool perfect for our freelance team."}
+{"index": 208, "text": "The real-time collaboration indicators show who is looking at the same item. Brilliant feature."}
+{"index": 209, "text": "The entire platform is down for us. We have a client presentation in 2 hours. URGENT."}
+{"index": 210, "text": "Is there a way to restrict which users can delete items permanently?"}
+{"index": 211, "text": "Clicking on a chart segment to drill down doesn't work, nothing happens."}
+{"index": 212, "text": "A native integration with Jira would make syncing between teams much less painful."}
+{"index": 213, "text": "Top-notch experience from trial to paid conversion. No pressure, just great product value."}
+{"index": 214, "text": "The discount that was applied during onboarding is no longer showing on my invoice."}
+{"index": 215, "text": "How do I recover items that were accidentally deleted?"}
+{"index": 216, "text": "Newly created items are not appearing in the list until the page is manually refreshed."}
+{"index": 217, "text": "A global notifications center to see all activity across projects in one place would help."}
+{"index": 218, "text": "The mobile app is one of the best I've used in this category. Intuitive and fast."}
+{"index": 219, "text": "All API calls are returning 401 errors since we rotated our keys following your instructions."}
+{"index": 220, "text": "What is the process for requesting a volume discount for our 500-person organization?"}
+{"index": 221, "text": "Columns cannot be reordered in the list view even though the documentation says they can."}
+{"index": 222, "text": "Adding an integration with Microsoft Teams for notifications would be very useful for us."}
+{"index": 223, "text": "Really pleased with how stable the platform has been this quarter. No issues at all."}
+{"index": 224, "text": "We've been double-billed every month for 3 months. Expect a full audit and refund."}
+{"index": 225, "text": "Can I set a custom expiration date for shared links?"}
+{"index": 226, "text": "The chart tooltips are cut off on the right side of the screen, can't read the full values."}
+{"index": 227, "text": "A workflow automation builder with if/then logic would eliminate so much manual work."}
+{"index": 228, "text": "The customer success team was incredibly proactive in helping us get set up. Thank you!"}
+{"index": 229, "text": "Our admin account got compromised and we need emergency access revocation now."}
+{"index": 230, "text": "How do I connect the app to our internal LDAP directory?"}
+{"index": 231, "text": "Filtering by multiple tags simultaneously doesn't work, only the last selected tag is applied."}
+{"index": 232, "text": "The ability to send digest emails summarizing daily activity would reduce notification noise."}
+{"index": 233, "text": "Kudos to the engineering team, the performance on large datasets has improved dramatically."}
+{"index": 234, "text": "I downgraded my plan but am still being charged at the old rate. Please correct this."}
+{"index": 235, "text": "What storage limits apply to the free tier?"}
+{"index": 236, "text": "The dropdown for selecting assignees is loading very slowly, takes 10+ seconds to appear."}
+{"index": 237, "text": "It would help to have a quick summary card that shows key stats for each item at a glance."}
+{"index": 238, "text": "The video tutorials on YouTube were incredibly clear. Got up to speed very quickly."}
+{"index": 239, "text": "The service has been intermittently failing for 4 hours. We need a status update urgently."}
+{"index": 240, "text": "How do I migrate data from a previous tool into your platform?"}
+{"index": 241, "text": "The pasted text in comments is being stripped of all line breaks."}
+{"index": 242, "text": "Voting on feature requests by other users would help you prioritize the most wanted features."}
+{"index": 243, "text": "The seamless CSV import is a huge time saver. Took less than 5 minutes to migrate our data."}
+{"index": 244, "text": "I've emailed support 5 times over 2 weeks and haven't received a single response."}
+{"index": 245, "text": "Is there a limit on how many API requests I can make per minute?"}
+{"index": 246, "text": "The dashboard widgets can't be resized, they all have the same fixed height."}
+{"index": 247, "text": "A way to comment on a specific part of an item's text would make reviews more precise."}
+{"index": 248, "text": "The platform is rock-solid. We've been using it for 3 years with virtually no downtime."}
+{"index": 249, "text": "Our billing contact was changed without authorization. This is a security concern."}
+{"index": 250, "text": "How do I set different notification preferences for different projects?"}
+{"index": 251, "text": "Long comments in the activity feed are not truncated, they break the layout on small screens."}
+{"index": 252, "text": "Version history per item so we can see what changed and revert if needed."}
+{"index": 253, "text": "The multi-language support is excellent. Our international team can all work in their language."}
+{"index": 254, "text": "We have a compliance audit tomorrow and our reports are returning empty data. Critical issue."}
+{"index": 255, "text": "Can I create an item via email by sending to a specific address?"}
+{"index": 256, "text": "The app shows wrong timezone for timestamps, all times are off by 2 hours."}
+{"index": 257, "text": "Please add the ability to create private items visible only to the creator and admins."}
+{"index": 258, "text": "Really appreciate that you responded to our feature request and shipped it within a month!"}
+{"index": 259, "text": "The entire file attachment system seems down, can't upload or view any attachments."}
+{"index": 260, "text": "How do I configure the outgoing email address for notifications?"}
+{"index": 261, "text": "When printing, the header on each page is missing which makes multi-page reports confusing."}
+{"index": 262, "text": "A way to see all items that are overdue across all projects in one unified view would be great."}
+{"index": 263, "text": "The 99.9% uptime this year has been impressive. Our team relies on it every single day."}
+{"index": 264, "text": "I signed up for the annual plan but was charged monthly instead. Need immediate correction."}
+{"index": 265, "text": "Is there a way to prevent users from changing the status of completed items?"}
+{"index": 266, "text": "Scrolling in the activity log causes the header to disappear which is disorienting."}
+{"index": 267, "text": "Adding emoji reactions to comments would make team interactions a bit more fun and engaging."}
+{"index": 268, "text": "The API documentation is comprehensive and well-structured. Made integration straightforward."}
+{"index": 269, "text": "Our account data seems to have been mixed with another organization's data. Very serious."}
+{"index": 270, "text": "How do I set a custom logo and color theme for our workspace?"}
+{"index": 271, "text": "After archiving items, the item count in the project header doesn't update correctly."}
+{"index": 272, "text": "Allowing users to create saved searches or smart filters that persist across sessions."}
+{"index": 273, "text": "The recent batch export feature is exactly what we needed. Works perfectly."}
+{"index": 274, "text": "An unauthorized admin was added to our workspace. We need help investigating this."}
+{"index": 275, "text": "What happens if I exceed my storage quota? Will I be notified before data is lost?"}
+{"index": 276, "text": "Markdown is not being rendered in the description field, it shows raw syntax instead."}
+{"index": 277, "text": "Integration with Asana would let us synchronize tasks across both platforms."}
+{"index": 278, "text": "The progress tracking visualization is very motivating for our team. Love it."}
+{"index": 279, "text": "I cannot access any admin settings. The menu is missing from my account entirely."}
+{"index": 280, "text": "How do I configure automatic reminders before a due date?"}
+{"index": 281, "text": "The CSV export encoding is wrong, special characters are garbled when opening in Excel."}
+{"index": 282, "text": "Subtask support would allow us to break down complex items into manageable steps."}
+{"index": 283, "text": "Transitioning from the old UI to the new one was smooth. Great migration experience."}
+{"index": 284, "text": "We've lost write access to our workspace since a permission update was applied."}
+{"index": 285, "text": "Can I set up the tool to work behind a corporate firewall with IP whitelisting?"}
+{"index": 286, "text": "The email digest option is not saving, the preference resets every time I log in."}
+{"index": 287, "text": "Integrating with Notion would allow us to sync our knowledge base with project items."}
+{"index": 288, "text": "Excellent response from the support team. Issue resolved within the hour. Very happy."}
+{"index": 289, "text": "The API is returning stale cached data that doesn't reflect changes made in the last 24h."}
+{"index": 290, "text": "What SLA guarantees do you offer for enterprise customers?"}
+{"index": 291, "text": "Tooltips appear behind modal dialogs, they're not visible when triggered from a modal."}
+{"index": 292, "text": "A dependency graph view to visualize how items are linked to each other would be very useful."}
+{"index": 293, "text": "The smooth and responsive performance makes working with large datasets a pleasure."}
+{"index": 294, "text": "I was downgraded to the free plan without warning or any communication from your team."}
+{"index": 295, "text": "How do I enable single sign-on for our workspace?"}
+{"index": 296, "text": "The progress bar in the item detail view always shows 0% even when subtasks are completed."}
+{"index": 297, "text": "A feature to convert a comment into a new standalone item would help with triage."}
+{"index": 298, "text": "Honestly the best tool in its category. We've tried all the alternatives and nothing compares."}
+{"index": 299, "text": "All webhooks stopped working 2 hours ago. Our entire automation pipeline is broken."}
+{"index": 300, "text": "How do I bulk-assign items to a different team member?"}
+{"index": 301, "text": "The tab order in the form is wrong, pressing Tab skips fields randomly."}
+{"index": 302, "text": "Please add an option to follow specific items and receive updates only for those."}
+{"index": 303, "text": "The clean minimalist design helps me focus on work without distractions. Wonderful UX."}
+{"index": 304, "text": "I cannot update my credit card. The payment method page throws an error."}
+{"index": 305, "text": "Is it possible to have multiple owners for a single workspace?"}
+{"index": 306, "text": "The notification email links redirect to the homepage instead of the specific item."}
+{"index": 307, "text": "A way to flag items for review before they're finalized would support our QA process."}
+{"index": 308, "text": "The customer support chat is genuinely fast and helpful. Rare to see this level of quality."}
+{"index": 309, "text": "Something changed on the platform last night and now half our team can't access their data."}
+{"index": 310, "text": "Can I integrate your platform with our CRM for two-way data sync?"}
+{"index": 311, "text": "In the list view, hovering over truncated text doesn't show a tooltip with the full content."}
+{"index": 312, "text": "It would be helpful if the platform sent alerts when usage is approaching plan limits."}
+{"index": 313, "text": "The way complex data is visualized is impressive. Much clearer than competitors."}
+{"index": 314, "text": "My promotion code was not applied during checkout. Now being charged full price."}
+{"index": 315, "text": "How do I enable or disable specific email notification types?"}
+{"index": 316, "text": "The mobile app crashes immediately on launch since the last iOS update."}
+{"index": 317, "text": "An AI-powered tagging suggestion feature would dramatically speed up our classification work."}
+{"index": 318, "text": "The simplified permission management is so much cleaner than the old system. Great improvement."}
+{"index": 319, "text": "We have 500 users locked out since a botched SSO configuration update. Critical."}
+{"index": 320, "text": "What is your process for handling data breach incidents?"}
+{"index": 321, "text": "Long item titles overflow the column boundary without wrapping or truncating properly."}
+{"index": 322, "text": "A workflow template library for common use cases would help new teams get started faster."}
+{"index": 323, "text": "The automatic status updates in the dashboard give great real-time visibility to our managers."}
+{"index": 324, "text": "I've been unable to log in for 48 hours and have received no response from support."}
+{"index": 325, "text": "How do I share specific views with external users without giving them full access?"}
+{"index": 326, "text": "Submitting the form sometimes creates duplicate entries in the database."}
+{"index": 327, "text": "Being able to embed interactive views in our internal documentation would be very powerful."}
+{"index": 328, "text": "Very impressed with how you've handled user feedback over the past year. Visible improvements."}
+{"index": 329, "text": "Our production integration has been returning errors since your maintenance window last night."}
+{"index": 330, "text": "Can I move items between different workspaces without losing their history?"}
+{"index": 331, "text": "Bulk editing items sometimes only applies the change to a subset of selected items."}
+{"index": 332, "text": "A built-in time zone converter for scheduling across international teams would be very helpful."}
+{"index": 333, "text": "This tool has become indispensable for our daily operations. Cannot imagine working without it."}
+{"index": 334, "text": "I never received the welcome email or setup instructions after signing up two days ago."}
+{"index": 335, "text": "How do I recover a workspace that was accidentally deleted by a team member?"}
+{"index": 336, "text": "The page title in browser tabs always shows the app name instead of the current item name."}
+{"index": 337, "text": "Being able to add conditional required fields based on item type would reduce data quality issues."}
+{"index": 338, "text": "The detailed onboarding email sequence was helpful without being overwhelming. Well crafted."}
+{"index": 339, "text": "Our SSO integration went down overnight and no one can log in to the system. Emergency."}
+{"index": 340, "text": "Is there a way to lock fields so they cannot be edited after the item reaches a certain status?"}
+{"index": 341, "text": "In the filter panel, the clear all button doesn't remove applied filters immediately."}
+{"index": 342, "text": "Ability to create different item types with different field sets per type would be very flexible."}
+{"index": 343, "text": "Just finished our first year with the platform and it's been transformative for the team."}
+{"index": 344, "text": "Payment was charged to an expired card even though we updated it beforehand. Please fix."}
+{"index": 345, "text": "Does the platform support IPv6 for enterprise network configurations?"}
+{"index": 346, "text": "Keyboard focus is lost after closing a modal dialog, user has to click to regain focus."}
+{"index": 347, "text": "A changelog for the API with versioning notes would help developers manage breaking changes."}
+{"index": 348, "text": "Migrating from spreadsheets to this tool was the best decision we made this year."}
+{"index": 349, "text": "All scheduled reports failed to send this morning. We need the data urgently for a board meeting."}
+{"index": 350, "text": "How do I create a custom field that calculates values from other fields automatically?"}
+{"index": 351, "text": "The chart colors are almost identical for different categories, hard to distinguish them."}
+{"index": 352, "text": "A native Android app would make it easier for field teams who are primarily on mobile."}
+{"index": 353, "text": "I really appreciate how quickly bugs get fixed after being reported. Fast and reliable team."}
+{"index": 354, "text": "I need a complete export of all our data for an audit. The export is timing out."}
+{"index": 355, "text": "Can I create a custom status workflow with specific allowed transitions?"}
+{"index": 356, "text": "When I resize a column, adjacent columns don't adjust, they overflow instead."}
+{"index": 357, "text": "A sandbox environment for testing automations before applying them in production would be great."}
+{"index": 358, "text": "The platform scaled seamlessly when our team grew from 20 to 200. No performance issues."}
+{"index": 359, "text": "We're seeing data being written to the wrong records. This is causing serious errors in production."}
+{"index": 360, "text": "How can I audit which team members have accessed sensitive items?"}
+{"index": 361, "text": "In the settings page, the save button scrolls out of view when the form is long."}
+{"index": 362, "text": "Allow multiple images to be attached and previewed in a gallery within an item."}
+{"index": 363, "text": "The in-app chat support is one of the best I've experienced with a SaaS product. Truly helpful."}
+{"index": 364, "text": "Our data pipeline is completely broken since the API schema changed without notice. Urgent."}
+{"index": 365, "text": "Is there an option to require approval before items move to the next status?"}
+{"index": 366, "text": "Pasting a URL into the description field doesn't create a clickable hyperlink."}
+{"index": 367, "text": "Custom email notification templates would help us maintain brand consistency."}
+{"index": 368, "text": "Your changelog is one of the best I've seen, clear, detailed, and published consistently."}
+{"index": 369, "text": "We can't process any transactions on our end due to a platform error. Every second counts."}
+{"index": 370, "text": "How do I generate a token with read-only permissions for a third-party integration?"}
+{"index": 371, "text": "The platform is not respecting the archived status, archived items appear in active views."}
+{"index": 372, "text": "A widget to display live stats on an external screen in the office would be great for visibility."}
+{"index": 373, "text": "The new dashboard layout is significantly more useful than the old one. Great restructuring."}
+{"index": 374, "text": "My account was merged with another user's account without my consent. Need this investigated."}
+{"index": 375, "text": "What is your policy on sub-processors and data transfers outside the EU?"}
+{"index": 376, "text": "On mobile, the floating action button overlaps with the bottom navigation bar."}
+{"index": 377, "text": "A project health score based on completion rate and overdue items would be a great KPI widget."}
+{"index": 378, "text": "The well-structured help center saved me a support ticket. Found everything I needed easily."}
+{"index": 379, "text": "Email verification links expire in under a minute, there's no way to complete registration."}
+{"index": 380, "text": "How do I enable automatic session timeout for security compliance?"}
+{"index": 381, "text": "When printing a filtered list, all items print instead of just the filtered results."}
+{"index": 382, "text": "The ability to add a description and documentation link to each label would help new annotators."}
+{"index": 383, "text": "How clean and reliable the export functionality is, it's one of the best I've used."}
+{"index": 384, "text": "All users were logged out and cannot get back in. We have an urgent client deliverable."}
+{"index": 385, "text": "Can I apply different branding to different sub-workspaces within our organization?"}
+{"index": 386, "text": "The item count shown in the sidebar doesn't match the actual number of items in the view."}
+{"index": 387, "text": "Adding a chat widget within project views would reduce the need to switch between tools."}
+{"index": 388, "text": "Really glad the platform supports our non-English language team members natively."}
+{"index": 389, "text": "We've been getting false positive security alerts for the past hour. Need help triaging."}
+{"index": 390, "text": "How do I configure field-level visibility based on user role?"}
+{"index": 391, "text": "The date field validation accepts invalid dates like February 30 without any error."}
+{"index": 392, "text": "A way to group items by a custom field in the list view would add a lot of flexibility."}
+{"index": 393, "text": "The platform is consistently reliable and the team clearly cares about user experience."}
+{"index": 394, "text": "I've been trying to upgrade for a week but the payment fails at the last step every time."}
+{"index": 395, "text": "What level of encryption is used for data at rest and in transit?"}
+{"index": 396, "text": "The animated transitions are causing seizure-like effects. Please add a reduce motion option."}
+{"index": 397, "text": "Real-time commenting in document views would turn this into a full async collaboration hub."}
+{"index": 398, "text": "The product quality speaks for itself. Our whole department switched to this within a month."}
+{"index": 399, "text": "Our backup restore is failing and we need data from 48 hours ago recovered now."}
+{"index": 400, "text": "How do I control which team members can export data from the workspace?"}
+{"index": 401, "text": "The file preview for PDFs only shows the first page and can't scroll to subsequent pages."}
+{"index": 402, "text": "Integrating with Salesforce to sync customer records with items would be extremely powerful."}
+{"index": 403, "text": "Support agent was patient and thorough in explaining the solution. Excellent experience."}
+{"index": 404, "text": "All our items have disappeared from the workspace after a sync error. Need recovery."}
+{"index": 405, "text": "Can the platform detect and merge duplicate items automatically?"}
+{"index": 406, "text": "The status change history in the item detail is incomplete, some transitions are not logged."}
+{"index": 407, "text": "A way to make specific fields mandatory before transitioning status would enforce our process."}
+{"index": 408, "text": "The new smart inbox feature has dramatically reduced the time I spend triaging notifications."}
+{"index": 409, "text": "Our primary contact just got removed as admin by someone unauthorized. We need to restore access."}
+{"index": 410, "text": "Is there a mobile SDK we can integrate into our own app?"}
+{"index": 411, "text": "Comments with code blocks are not rendering the code with monospace font styling."}
+{"index": 412, "text": "Allowing items to belong to multiple projects simultaneously without duplicating them."}
+{"index": 413, "text": "The search is blazing fast even with thousands of items. Very impressive performance."}
+{"index": 414, "text": "My export request was submitted 3 hours ago and has not completed. The data is needed urgently."}
+{"index": 415, "text": "What are the options for on-premise deployment for security-sensitive industries?"}
+{"index": 416, "text": "The placeholder text in the search bar is hard to read, contrast ratio is too low."}
+{"index": 417, "text": "Being notified of relevant updates without having to actively check is a great workflow feature."}
+{"index": 418, "text": "The clean API design made integration a breeze. Well thought out from a developer perspective."}
+{"index": 419, "text": "Our entire team is without access 30 minutes before our weekly all-hands. Extremely urgent."}
+{"index": 420, "text": "How do I configure two-factor authentication for all users in our organization?"}
+{"index": 421, "text": "When adding a new column to a view, it appears at a random position instead of the last."}
+{"index": 422, "text": "A smart auto-assignment rule based on item properties would reduce admin overhead significantly."}
+{"index": 423, "text": "The product just keeps getting better with every release. Constantly impressed."}
+{"index": 424, "text": "I've been waiting 10 days for a response to my billing dispute. This is unacceptable."}
+{"index": 425, "text": "What is the best way to import historical data including attachments and comments?"}
+{"index": 426, "text": "The rich text editor crashes the browser tab when pasting very large documents."}
+{"index": 427, "text": "Custom domain support with SSL for published views would make the product self-contained."}
+{"index": 428, "text": "The auto-assignment feature has saved our team lead hours of manual triage every week."}
+{"index": 429, "text": "All data in our production environment was wiped during what should have been a test operation."}
+{"index": 430, "text": "How does billing work when adding users mid-cycle?"}
+{"index": 431, "text": "The global search doesn't include comments, searching for text within comments finds nothing."}
+{"index": 432, "text": "Bulk status changes via the API would automate a large part of our pipeline."}
+{"index": 433, "text": "The collaboration features have made remote work genuinely effective for our team. Love it."}
+{"index": 434, "text": "I cannot access my invoice history, the page returns a 403 error."}
+{"index": 435, "text": "Is there documentation on how to integrate with Power BI for analytics?"}
+{"index": 436, "text": "The pagination controls are missing from the bottom of the list on mobile view."}
+{"index": 437, "text": "Integrating with Monday.com to sync items between both tools for different departments."}
+{"index": 438, "text": "What a difference the latest update made. Productivity has noticeably increased on our team."}
+{"index": 439, "text": "Our organization-wide sync has been stuck processing for 4 hours. Data is not updating."}
+{"index": 440, "text": "Can I set different retention policies for different types of data within my workspace?"}
+{"index": 441, "text": "When copying an item URL and opening it in a new tab, it shows a 404 error."}
+{"index": 442, "text": "An intelligent merge suggestion feature for duplicate items would improve data hygiene."}
+{"index": 443, "text": "The permission system is granular and flexible enough to support our complex team structure."}
+{"index": 444, "text": "We can't send data to your platform via webhook since it started rejecting our payloads."}
+{"index": 445, "text": "What is the recommended way to archive completed projects while preserving all data?"}
+{"index": 446, "text": "Adding an item to a list view and then switching to grid view doesn't show the new item."}
+{"index": 447, "text": "A quick-add panel for creating items without opening a full form would speed up data entry."}
+{"index": 448, "text": "The keyboard navigation through the app is comprehensive. Rarely need to use the mouse."}
+{"index": 449, "text": "Our CI/CD pipeline has been broken for 3 hours due to an API change that wasn't announced."}
+{"index": 450, "text": "How do I reset a user's 2FA device if they've lost access to their authenticator?"}
+{"index": 451, "text": "The loading animation for the dashboard hangs indefinitely on slow network connections."}
+{"index": 452, "text": "Integration with Figma to link design files directly to items would help our product team."}
+{"index": 453, "text": "The improvement in search relevance since the last update is significant. Results are spot on."}
+{"index": 454, "text": "I have been charged for a plan upgrade I never confirmed. Requesting an immediate refund."}
+{"index": 455, "text": "How can I see a breakdown of API usage by endpoint for cost attribution?"}
+{"index": 456, "text": "The platform does not correctly handle daylight saving time transitions in scheduled tasks."}
+{"index": 457, "text": "A way to annotate screenshots and attach them directly to items would improve bug reports."}
+{"index": 458, "text": "One of the most reliable platforms we use. The uptime track record speaks for itself."}
+{"index": 459, "text": "We're in the middle of a live event and the platform just went down. Need it up immediately."}
+{"index": 460, "text": "How do I configure workspace-level defaults for new items such as status and assignee?"}
+{"index": 461, "text": "Selecting all items in a filtered list still selects hidden items from other filters."}
+{"index": 462, "text": "A print-to-PDF button within items would make sharing formal reports much easier."}
+{"index": 463, "text": "I showed this to our executive team and they were immediately convinced. Impressive demo-ability."}
+{"index": 464, "text": "Our read replica is returning data from 2 days ago, the sync appears completely broken."}
+{"index": 465, "text": "What options do you have for enterprise-level support with guaranteed response times?"}
+{"index": 466, "text": "When items are archived, they should be excluded from aggregations in the dashboard by default."}
+{"index": 467, "text": "The ability to cross-reference items from different workspaces would suit our multi-team setup."}
+{"index": 468, "text": "The thoughtful UX decisions throughout the product show real understanding of how teams work."}
+{"index": 469, "text": "Critical data inconsistency detected between our staging and production environments."}
+{"index": 470, "text": "How do I grant temporary access to an external auditor without making them a full member?"}
+{"index": 471, "text": "The map view doesn't load in Firefox, just a blank grey container."}
+{"index": 472, "text": "Webhook retry logic with exponential backoff would make integrations much more resilient."}
+{"index": 473, "text": "The auto-complete suggestions in the tag input are accurate and save so much time."}
+{"index": 474, "text": "My account data was accessible to another user, this is a serious breach of privacy."}
+{"index": 475, "text": "What are the options for custom data residency within specific geographic regions?"}
+{"index": 476, "text": "The sticky header in the table view stops working after scrolling down far enough."}
+{"index": 477, "text": "A digest of newly created items would help managers review what's been submitted each day."}
+{"index": 478, "text": "Every interaction with support has been helpful and kind. Great team culture."}
+{"index": 479, "text": "Our main integration endpoint has returned only errors for the last 90 minutes."}
+{"index": 480, "text": "Can I configure the tool to prevent any item from being deleted once it's been marked complete?"}
+{"index": 481, "text": "The loading order of widgets on the dashboard seems random and changes on every login."}
+{"index": 482, "text": "An integration with Linear would allow engineering teams to sync bugs between both tools."}
+{"index": 483, "text": "Genuinely surprised by how much value we got from the free trial. Easy decision to convert."}
+{"index": 484, "text": "Our API rate limits were exhausted without warning, all our automations are now halted."}
+{"index": 485, "text": "Is there a way to export all audit log data for a specific period?"}
+{"index": 486, "text": "Item descriptions longer than 2000 characters get silently truncated on save."}
+{"index": 487, "text": "An AI assistant that can help draft item descriptions from rough notes would be amazing."}
+{"index": 488, "text": "The customizable views make it possible for each team member to set up their ideal workspace."}
+{"index": 489, "text": "We have a zero-byte file where our main dataset was stored. This is catastrophic."}
+{"index": 490, "text": "What is the maximum number of custom fields we can add per item type?"}
+{"index": 491, "text": "After updating our billing address, the old address is still appearing on new invoices."}
+{"index": 492, "text": "Adding the ability to set recurring due dates for items that repeat on a schedule."}
+{"index": 493, "text": "The drag and drop from the quick-add panel into the list is buttery smooth. Great detail."}
+{"index": 494, "text": "The tool started randomly re-opening closed items from last quarter. Investigation needed urgently."}
+{"index": 495, "text": "How do I configure item templates so new items auto-populate with standard content?"}
+{"index": 496, "text": "The email notification for assigned items doesn't include a direct link to the item."}
+{"index": 497, "text": "A leaderboard or gamification for labeling contributions would motivate our annotation team."}
+{"index": 498, "text": "The responsiveness across desktop, tablet, and mobile is consistently excellent. Well done."}
+{"index": 499, "text": "Our access control rules appear to have been reset overnight. Major security exposure."}
+{"index": 500, "text": "How do I connect an external database as a data source for my workspace?"}
+{"index": 501, "text": "In the grid view, newly added rows appear at the top instead of the bottom."}
+{"index": 502, "text": "A way to create team-specific views that are shared by default within that team group."}
+{"index": 503, "text": "The straightforward pricing with no hidden fees makes budgeting so much easier."}
+{"index": 504, "text": "I renewed my subscription but it still shows as expired. Access to features is still blocked."}
+{"index": 505, "text": "What format should the dataset file be in for the bulk importer?"}
+{"index": 506, "text": "When switching between views, scroll position is not preserved, always jumps back to top."}
+{"index": 507, "text": "Built-in video call integration directly within items would reduce context-switching."}
+{"index": 508, "text": "The commitment to transparent communication during incidents is highly appreciated."}
+{"index": 509, "text": "A critical process that runs nightly just failed, our morning report data is missing."}
+{"index": 510, "text": "How do I bulk-add labels to a large set of existing items?"}
+{"index": 511, "text": "The keyboard shortcut for submitting a form conflicts with the browser shortcut on Mac."}
+{"index": 512, "text": "A way to create filtered dashboards for executives that hide operational noise."}
+{"index": 513, "text": "The consistent, thoughtful improvements over time show a product team that listens."}
+{"index": 514, "text": "An unexpected charge appeared on our card with no corresponding invoice in our account."}
+{"index": 515, "text": "Is it possible to define custom alert thresholds based on item field values?"}
+{"index": 516, "text": "The comment editor loses content when accidentally clicking outside of it before saving."}
+{"index": 517, "text": "Structured changelog entries per item with categories like Bug Fix, Feature, Update."}
+{"index": 518, "text": "The transition to the new interface was seamless. No relearning required. Brilliant UX."}
+{"index": 519, "text": "Payment processing has been unavailable for 2 hours. We cannot complete customer transactions."}
+{"index": 520, "text": "How do I configure the data freshness settings for cached dashboard views?"}
+{"index": 521, "text": "Clicking undo after a bulk operation doesn't revert all changes, some remain applied."}
+{"index": 522, "text": "The ability to assign a cost or budget field to items for financial project tracking."}
+{"index": 523, "text": "The new collaborative features have genuinely improved how our remote team communicates."}
+{"index": 524, "text": "An integration pushed corrupt data to our account and now records are showing invalid values."}
+{"index": 525, "text": "What is the recommended chunk size for optimal performance with large datasets?"}
+{"index": 526, "text": "Nested folders for organizing projects are missing, everything is flat and hard to navigate."}
+{"index": 527, "text": "Multi-step approvals where different teams must sign off before an item moves forward."}
+{"index": 528, "text": "The onboarding flow is one of the smoothest I've experienced for a product this complex."}
+{"index": 529, "text": "We upgraded to enterprise and our previous settings and data are no longer accessible."}
+{"index": 530, "text": "Is there a way to send automated messages to users when an item reaches a certain status?"}
+{"index": 531, "text": "In the settings panel, saved changes are not persisted after closing the panel and reopening."}
+{"index": 532, "text": "Conditional field visibility based on values selected in related fields would be very powerful."}
+{"index": 533, "text": "The fast search with fuzzy matching has become one of my most-used features daily."}
+{"index": 534, "text": "This is the third billing error in as many months. Our finance team is losing confidence."}
+{"index": 535, "text": "How do I restrict users from being able to see items created before they joined the team?"}
+{"index": 536, "text": "The file size shown in the attachment list is always 0KB regardless of the actual file size."}
+{"index": 537, "text": "Let users schedule when a draft item goes live rather than publishing immediately."}
+{"index": 538, "text": "The investment in accessibility is evident. Our users with disabilities can work independently."}
+{"index": 539, "text": "We need to roll back to yesterday's data snapshot as today's batch run corrupted our dataset."}
+{"index": 540, "text": "What is the maximum payload size accepted by the webhook endpoint?"}
+{"index": 541, "text": "The color picker for custom labels only shows 8 options, need a full color palette."}
+{"index": 542, "text": "A mention system in comments using @ to notify specific users within the text."}
+{"index": 543, "text": "The improvement to the import wizard this year has made onboarding new clients much faster."}
+{"index": 544, "text": "Our main account has been compromised, unauthorized users have admin access right now."}
+{"index": 545, "text": "How do I set up IP-based access restrictions for our workspace?"}
+{"index": 546, "text": "When using the split view, the right panel is sometimes rendering on top of the left panel."}
+{"index": 547, "text": "An integration with Zapier would allow us to connect to hundreds of other apps easily."}
+{"index": 548, "text": "The platform is genuinely easy to use even for non-technical team members. Well done."}
+{"index": 549, "text": "All our items are showing an incorrect status after the overnight sync process ran."}
+{"index": 550, "text": "How do I add a new language to the workspace for multi-language support?"}
+{"index": 551, "text": "The badge count for unread notifications doesn't match the actual number of unread items."}
+{"index": 552, "text": "An integration with DocuSign to trigger signature requests directly from items."}
+{"index": 553, "text": "Really impressive how the platform handles both small teams and enterprise-scale deployments."}
+{"index": 554, "text": "We haven't been able to submit any support tickets for the past 3 hours. The form fails."}
+{"index": 555, "text": "Is there a programmatic way to create and configure workspaces for new customers?"}
+{"index": 556, "text": "The item number in the URL doesn't match the displayed item ID in the detail view."}
+{"index": 557, "text": "Would love the ability to set SLA timers per item type with automatic escalation."}
+{"index": 558, "text": "The platform has helped us pass multiple compliance audits with its detailed logging."}
+{"index": 559, "text": "An external-facing portal for submitting items would be a powerful feature for customer-facing teams."}
+{"index": 560, "text": "How do I disable specific keyboard shortcuts that conflict with my accessibility software?"}
+{"index": 561, "text": "The new item appears in the sidebar count but not in the actual list on the main view."}
+{"index": 562, "text": "Inline video previews for attached video files would save switching to an external player."}
+{"index": 563, "text": "The thoughtful way edge cases are handled in the UI shows real product maturity."}
+{"index": 564, "text": "We are unable to export more than 100 rows at once, our dataset has over 50,000 items."}
+{"index": 565, "text": "Can I generate a signed URL to allow temporary access to a specific item for a guest?"}
+{"index": 566, "text": "The text input for comments loses focus unexpectedly after typing a few characters."}
+{"index": 567, "text": "A custom branding pack for resellers who want to white-label the platform for their clients."}
+{"index": 568, "text": "The team behind this product clearly uses it themselves. It shows in the quality of the UX."}
+{"index": 569, "text": "Our system has been returning stale data for over an hour. The cache appears to be stuck."}
+{"index": 570, "text": "What is the correct way to handle pagination in the API for large result sets?"}
+{"index": 571, "text": "The autocorrect on mobile is replacing technical terms in text fields unexpectedly."}
+{"index": 572, "text": "The ability to attach voice notes to items would make documentation on the go much faster."}
+{"index": 573, "text": "Really appreciate that new features are announced in-app, not just in email newsletters."}
+{"index": 574, "text": "Our production environment went down during peak hours and no status page update was posted."}
+{"index": 575, "text": "How do I prevent users from assigning items to themselves when they shouldn't be able to?"}
+{"index": 576, "text": "The item list on iPad switches to mobile layout instead of the tablet-optimized version."}
+{"index": 577, "text": "A built-in OCR feature to extract text from uploaded image attachments would be powerful."}
+{"index": 578, "text": "The feature release cadence has been impressive. A meaningful update nearly every week."}
+{"index": 579, "text": "An infinite loop in a workflow automation has locked our workspace. Need emergency access."}
+{"index": 580, "text": "How do I apply a bulk operation only to a subset of items matching a specific filter?"}
+{"index": 581, "text": "The total count in the header shows a number that doesn't match what's visible in the list."}
+{"index": 582, "text": "Granular role permissions per project rather than only organization-wide would be very helpful."}
+{"index": 583, "text": "Thank you for the responsive support experience on the weekend. Didn't expect that level of care."}
+{"index": 584, "text": "The latest release broke our critical nightly export workflow. Need an urgent rollback."}
+{"index": 585, "text": "Can I create a public-facing board to display a subset of my workspace data?"}
+{"index": 586, "text": "The search highlights don't appear in the description field, only in the title."}
+{"index": 587, "text": "Integrating directly with AWS S3 for file storage instead of platform-managed storage."}
+{"index": 588, "text": "The consistent improvement in export accuracy over time shows real commitment to quality."}
+{"index": 589, "text": "Our platform access was blocked by an IP change that happened during an office relocation."}
+{"index": 590, "text": "How do I enable end-to-end encryption for all data within our workspace?"}
+{"index": 591, "text": "The label colors assigned during import don't match the colors selected in the import template."}
+{"index": 592, "text": "A smart due date suggestion based on item type and priority would help with realistic planning."}
+{"index": 593, "text": "The collaboration UX is so intuitive that we no longer need to hold daily sync meetings."}
+{"index": 594, "text": "Our payment failed and now our workspace is locked while we have an active client project."}
+{"index": 595, "text": "What is the recommended approach for managing a multi-tenant setup for enterprise clients?"}
+{"index": 596, "text": "On mobile, landscape mode shows the same narrow layout as portrait, no optimization applied."}
+{"index": 597, "text": "A changelog comparison view to see what changed between two versions of an item."}
+{"index": 598, "text": "The platform's flexibility has allowed us to model very complex workflows successfully."}
+{"index": 599, "text": "We're experiencing mass data corruption across our workspace. This is a critical emergency."}
+{"index": 600, "text": "How do I configure notifications to be sent via SMS in addition to email?"}
+{"index": 601, "text": "When I apply a filter, the page jumps to the top which is disorienting on long lists."}
+{"index": 602, "text": "Native support for mathematical formulas in description fields for scientific teams."}
+{"index": 603, "text": "The team responds to feature requests thoughtfully. Feels like a product built with users."}
+{"index": 604, "text": "Half our user accounts were deactivated overnight with no record of who did it."}
+{"index": 605, "text": "Can I schedule a one-time data import to run at a specific time without manual intervention?"}
+{"index": 606, "text": "The error messages shown on failed actions are too generic, not helpful for debugging."}
+{"index": 607, "text": "Having role-specific home screens that show what's most relevant per user type."}
+{"index": 608, "text": "The improved table rendering in the latest version is noticeably faster with many rows."}
+{"index": 609, "text": "Our account was charged after the free trial ended without any warning email. Need a refund."}
+{"index": 610, "text": "How do I configure an integration that triggers on status changes?"}
+{"index": 611, "text": "The tooltip positioning is inverted, tooltips appear below the trigger instead of above."}
+{"index": 612, "text": "A smart duplicate detector that flags potentially identical items before they're created."}
+{"index": 613, "text": "The reliability and performance of the platform is one of the main reasons we haven't left."}
+{"index": 614, "text": "We have items from a completed migration that need emergency restoration. Nothing is visible."}
+{"index": 615, "text": "What is the character limit for custom field names?"}
+{"index": 616, "text": "Reassigning an item to a user who is no longer active throws an unhandled error."}
+{"index": 617, "text": "The option to hide certain fields from the item list view while keeping them in the form."}
+{"index": 618, "text": "I love how the product gets out of the way and lets us focus on actual work."}
+{"index": 619, "text": "The entire search system returned no results for an hour before recovering on its own."}
+{"index": 620, "text": "What documentation exists for self-hosting this solution on our own infrastructure?"}
+{"index": 621, "text": "Image thumbnails are not generating for newly uploaded files, just showing a blank preview."}
+{"index": 622, "text": "Making the sidebar collapsible to give more screen space to the main content area."}
+{"index": 623, "text": "The real-time sync between our team members means we're always working on the latest data."}
+{"index": 624, "text": "A misconfigured permission set has locked our most critical workspace. This is an emergency."}
+{"index": 625, "text": "How do I configure rate limiting to protect our API integration from accidental overuse?"}
+{"index": 626, "text": "The action button in the header overlaps the notification bell on screen widths below 1024px."}
+{"index": 627, "text": "A visual workflow builder with drag-and-drop automation steps would make setup much easier."}
+{"index": 628, "text": "The improvement in load times across the app has made the experience significantly more pleasant."}
+{"index": 629, "text": "All our data was removed when we ran what we thought was a test delete operation."}
+{"index": 630, "text": "How do I control which users are allowed to invite new members to the organization?"}
+{"index": 631, "text": "The icon for delete and archive look too similar, easy to accidentally perform the wrong action."}
+{"index": 632, "text": "A notification summary report that sends a daily PDF of all activity to the team lead."}
+{"index": 633, "text": "Proud to be a long-term customer. The platform has evolved significantly while staying reliable."}
+{"index": 634, "text": "We have an invoice for $0 that is blocking our account renewal. Need this resolved today."}
+{"index": 635, "text": "What are the limits on the number of automations I can configure per workspace?"}
+{"index": 636, "text": "When I hover over a chart slice, the tooltip shows data from a different slice."}
+{"index": 637, "text": "Bulk archiving items that haven't been updated in over 90 days as a cleanup automation."}
+{"index": 638, "text": "Flawless performance even when 50 people are working simultaneously on the same workspace."}
+{"index": 639, "text": "A major workflow we depend on daily has been broken since last night's deployment."}
+{"index": 640, "text": "How do I handle items that need approval from multiple stakeholders before closing?"}
+{"index": 641, "text": "The filter icon is grayed out even though it's not disabled, confusing affordance."}
+{"index": 642, "text": "Allowing workspace-level custom scripts for advanced automation beyond built-in triggers."}
+{"index": 643, "text": "The UI is consistent across all sections. No jarring context switches when navigating."}
+{"index": 644, "text": "We've lost all data created in the last 6 hours following what appears to be a database rollback."}
+{"index": 645, "text": "Is there a way to set dynamic due dates based on when an item was created?"}
+{"index": 646, "text": "The number formatting in reports doesn't follow local conventions for non-English locales."}
+{"index": 647, "text": "A way to see at a glance which items have unread comments since my last visit."}
+{"index": 648, "text": "The data visualization options are the most versatile we've found in any tool in this space."}
+{"index": 649, "text": "Our team's accounts were all downgraded simultaneously, this has disrupted our entire workflow."}
+{"index": 650, "text": "How do I configure automatic tagging rules based on content patterns in the text field?"}
+{"index": 651, "text": "Deleted items appear in search results for up to 10 minutes after deletion."}
+{"index": 652, "text": "A built-in chat alongside items to have quick contextual discussions without leaving the tool."}
+{"index": 653, "text": "The seamless integration with our existing tools made the transition completely painless."}
+{"index": 654, "text": "Something has corrupted our permission tree, users are seeing data they should not have access to."}
+{"index": 655, "text": "How do I configure CORS settings to allow cross-origin API requests from our frontend?"}
+{"index": 656, "text": "On small screen widths, the modal close button is outside the visible viewport area."}
+{"index": 657, "text": "A machine learning model to recommend labels based on historical annotation patterns."}
+{"index": 658, "text": "The investment in developer tooling shows, the SDK is well-designed and easy to use."}
+{"index": 659, "text": "The entire authentication system rejected all tokens at once. No one can log in."}
+{"index": 660, "text": "What log formats are supported for sending logs to our SIEM system?"}
+{"index": 661, "text": "When I try to update an item's due date, it keeps reverting to the original date on save."}
+{"index": 662, "text": "The ability to set custom start pages per team so each team lands on their relevant view."}
+{"index": 663, "text": "The thoughtful dark mode implementation maintains full readability without eye strain."}
+{"index": 664, "text": "I cannot renew my subscription, the renewal page is throwing a 500 error."}
+{"index": 665, "text": "Is it possible to preview what an automation workflow will do before activating it?"}
+{"index": 666, "text": "The item counter shows a negative number after archiving items from a filtered view."}
+{"index": 667, "text": "Having a native Linux desktop app in addition to the web app would suit our developer team."}
+{"index": 668, "text": "The way the app adapts to different content densities is thoughtfully done. Great work."}
+{"index": 669, "text": "Our platform's uptime monitor has detected a 45-minute outage with no status page update."}
+{"index": 670, "text": "How do I configure environment-specific settings between staging and production workspaces?"}
+{"index": 671, "text": "Scrolling through a long dropdown sometimes jumps back to the top of the options list."}
+{"index": 672, "text": "Geo-tagged items on a map would help our field operations team visualize their workload."}
+{"index": 673, "text": "The API design follows REST best practices consistently. Makes everything predictable."}
+{"index": 674, "text": "Our account was suspended mid-project with no warning. We have a client deadline tomorrow."}
+{"index": 675, "text": "What is the recommended indexing strategy for large datasets to ensure fast query performance?"}
+{"index": 676, "text": "The hover state for interactive elements disappears too quickly, hard to interact with."}
+{"index": 677, "text": "Adding support for custom calculated fields derived from data in other fields."}
+{"index": 678, "text": "The new analytics widgets have become central to our weekly management review meetings."}
+{"index": 679, "text": "We are unable to process any incoming data, our ingest pipeline has been failing for hours."}
+{"index": 680, "text": "How do I configure the platform to enforce a minimum password complexity policy?"}
+{"index": 681, "text": "The checkbox state for bulk selection is inconsistent, sometimes shows as indeterminate when it should be checked."}
+{"index": 682, "text": "An API endpoint to retrieve a diff between two item versions would be very useful for auditing."}
+{"index": 683, "text": "The quality of the product has allowed us to retire 3 separate legacy tools. Huge efficiency gain."}
+{"index": 684, "text": "The import job has been running for 8 hours with no completion or error message. Stuck."}
+{"index": 685, "text": "Can API access be restricted to specific IP ranges for security compliance?"}
+{"index": 686, "text": "Newly uploaded attachments are only visible to the uploader until the page is refreshed."}
+{"index": 687, "text": "Custom role definitions with fine-grained permission sets for complex organizational structures."}
+{"index": 688, "text": "The smooth onboarding experience convinced us to adopt this platform organization-wide."}
+{"index": 689, "text": "Our database has been unavailable for the past 2 hours with no communication from your team."}
+{"index": 690, "text": "How do I set up a workspace for multiple clients that are completely isolated from each other?"}
+{"index": 691, "text": "The action confirmation dialog sometimes doesn't appear and destructive actions run immediately."}
+{"index": 692, "text": "Adding QR code generation for items to enable quick mobile access in field environments."}
+{"index": 693, "text": "The consistent, high-quality support has been a key factor in keeping us as a customer."}
+{"index": 694, "text": "An attacker appears to have exfiltrated data from our workspace. We need incident response help."}
+{"index": 695, "text": "What options exist for on-demand human review of flagged automated decisions?"}
+{"index": 696, "text": "The focus ring for keyboard navigation is not visible in high contrast mode."}
+{"index": 697, "text": "A smart inbox that groups related notifications together to reduce cognitive load."}
+{"index": 698, "text": "The depth of reporting capabilities has made our quarterly business reviews much more data-driven."}
+{"index": 699, "text": "All our historical data has disappeared after what appears to be an unintended database migration."}
+{"index": 700, "text": "How do I configure custom domain verification for email notifications?"}
+{"index": 701, "text": "When zooming in to 200%, the main navigation menu breaks and items stack vertically."}
+{"index": 702, "text": "The ability to apply AI-based clustering to group similar items automatically."}
+{"index": 703, "text": "The new workspace analytics feature has made it easy to track adoption across our teams."}
+{"index": 704, "text": "My account was billed for 12 users but we only have 3 active, need an immediate correction."}
+{"index": 705, "text": "What are the performance benchmarks for the platform under concurrent heavy load?"}
+{"index": 706, "text": "After renaming a project, all existing links and bookmarks to that project return 404."}
+{"index": 707, "text": "The ability to trigger external actions from status transitions using outbound webhooks."}
+{"index": 708, "text": "The speed improvements to the import pipeline have reduced our data loading time by 80%."}
+{"index": 709, "text": "All our user-defined automations have been silently deactivated since the update last night."}
+{"index": 710, "text": "How do I split one workspace into two separate workspaces with isolated data?"}
+{"index": 711, "text": "The drag handle for reordering items is too small to interact with accurately on touchscreens."}
+{"index": 712, "text": "Custom webhooks that can filter by item type would allow much more targeted integrations."}
+{"index": 713, "text": "The transparency about pricing changes well in advance is something we deeply appreciate."}
+{"index": 714, "text": "Our primary use case has been completely broken since an API response schema changed silently."}
+{"index": 715, "text": "Is there any documentation on disaster recovery procedures and data backup guarantees?"}
+{"index": 716, "text": "When filtering by date range, items on the boundary dates are sometimes excluded incorrectly."}
+{"index": 717, "text": "Adding a feature to compare metrics across two time periods side by side in dashboards."}
+{"index": 718, "text": "The product has become the single source of truth for our team. We rely on it completely."}
+{"index": 719, "text": "We discovered unauthorized API key usage that appears to have been ongoing for several days."}
+{"index": 720, "text": "How do I handle authentication for API calls made from a browser-based frontend application?"}
+{"index": 721, "text": "After a failed upload, the retry button does not clear the error state before attempting again."}
+{"index": 722, "text": "The option to receive a summary of annotation progress at the end of each labeling session."}
+{"index": 723, "text": "One of the most stable platforms we use. The reliability is a key reason for our loyalty."}
+{"index": 724, "text": "Our entire organization is locked out after a failed 2FA migration. This is critical."}
+{"index": 725, "text": "Can I configure the platform to automatically assign items based on workload balancing?"}
+{"index": 726, "text": "The grid layout becomes misaligned when there are fewer items than columns in the last row."}
+{"index": 727, "text": "An integration with HubSpot to auto-create items from inbound leads would streamline our pipeline."}
+{"index": 728, "text": "The platform's ability to handle millions of items without degradation is truly enterprise-grade."}
+{"index": 729, "text": "All the data modified in the last 24 hours has been reverted to its previous state unexpectedly."}
+{"index": 730, "text": "What is the process for negotiating custom data processing agreements for GDPR compliance?"}
+{"index": 731, "text": "Applying a global theme change in settings doesn't update the already-open tabs."}
+{"index": 732, "text": "A native Apple Watch app for quick status updates and incoming assignment notifications."}
+{"index": 733, "text": "The level of care put into the product is evident in every detail. Exceptional craftsmanship."}
+{"index": 734, "text": "The platform is returning random results for our filtered queries since the last deployment."}
+{"index": 735, "text": "How do I create a view that shows only items modified in the last 7 days?"}
+{"index": 736, "text": "Long team names in the sidebar get cropped without a tooltip to show the full name."}
+{"index": 737, "text": "An integration with Confluence to link documentation pages directly to items for context."}
+{"index": 738, "text": "The way the tool evolves based on user feedback keeps us as advocates for the product."}
+{"index": 739, "text": "An attacker has been active in our workspace for the last hour, accounts are being modified."}
+{"index": 740, "text": "What is the recommended migration path when upgrading between major platform versions?"}
+{"index": 741, "text": "Adding a tag to an item sometimes adds it to a different item instead. Likely a focus issue."}
+{"index": 742, "text": "The ability to create custom views that are shareable via a public or restricted link."}
+{"index": 743, "text": "The seamless dark mode with OS-level auto-switching is a quality-of-life detail I love."}
+{"index": 744, "text": "We haven't been able to create new items for the past hour, the form submission fails silently."}
+{"index": 745, "text": "How do I enable verbose logging for debugging purposes in a self-hosted environment?"}
+{"index": 746, "text": "The pagination controls are overlapping with item content on viewport widths between 768–900px."}
+{"index": 747, "text": "Native integration with GitHub to link pull requests and issues to items in the workspace."}
+{"index": 748, "text": "The responsiveness of the team to security concerns has been outstanding. Very professional."}
+{"index": 749, "text": "Our workspace data is out of sync across different regions, users see inconsistent states."}
+{"index": 750, "text": "How do I configure field masking so that sensitive information is hidden from most users?"}
+{"index": 751, "text": "When I delete a comment, it still shows in the activity feed as if the comment still exists."}
+{"index": 752, "text": "The option to configure a custom footer in exported documents with company name and logo."}
+{"index": 753, "text": "The overall polish and attention to detail across the product is what sets it apart."}
+{"index": 754, "text": "Our main workspace is returning 503 errors for all users. This must be resolved immediately."}
+{"index": 755, "text": "What types of third-party security audits does the platform undergo regularly?"}
+{"index": 756, "text": "The multi-select dropdown doesn't scroll, options beyond the visible area are unreachable."}
+{"index": 757, "text": "A smart assignment suggestion based on past patterns and current team workload."}
+{"index": 758, "text": "The improved filter UX has made it significantly faster to build complex views."}
+{"index": 759, "text": "Critical integration stopped receiving data 3 hours ago. Our reporting pipeline is stalled."}
+{"index": 760, "text": "How do I enable audit trail logging that captures every field-level change?"}
+{"index": 761, "text": "The tooltip for the status field shows the wrong description for two of our custom statuses."}
+{"index": 762, "text": "The ability to define custom metrics and KPIs that the platform tracks automatically."}
+{"index": 763, "text": "The product is so stable that we barely think about it, it just works reliably every day."}
+{"index": 764, "text": "All our scheduled jobs failed to run overnight. We have 12 hours of missing operations."}
+{"index": 765, "text": "How do I query the API to find items that match multiple custom field conditions?"}
+{"index": 766, "text": "Long option lists in dropdowns don't have a search field to quickly find a specific value."}
+{"index": 767, "text": "Native support for drawing simple wireframes or diagrams within item descriptions."}
+{"index": 768, "text": "Every product decision seems made with the user in mind. Consistently delightful to use."}
+{"index": 769, "text": "A security misconfiguration has exposed our private workspace to unauthenticated users."}
+{"index": 770, "text": "What are the network requirements for running this in an air-gapped environment?"}
+{"index": 771, "text": "The back button in the browser sometimes navigates to a stale cached version of a page."}
+{"index": 772, "text": "Ability to set up read-only API tokens scoped to specific projects or workspaces."}
+{"index": 773, "text": "The thoughtful use of whitespace makes the interface feel calm and easy to navigate."}
+{"index": 774, "text": "Our workspace quota was silently exceeded, data submissions have been failing all morning."}
+{"index": 775, "text": "How do I retrieve a list of all items modified after a specific timestamp via the API?"}
+{"index": 776, "text": "Switching between organization accounts requires a full logout/login instead of a quick switch."}
+{"index": 777, "text": "A feature to request a status update from the assigned person directly from the item view."}
+{"index": 778, "text": "The product documentation is detailed enough for complex setups while remaining accessible."}
+{"index": 779, "text": "We're experiencing persistent timeouts on all write operations for the last 30 minutes."}
+{"index": 780, "text": "How do I configure the platform for a fully offline-capable deployment for remote locations?"}
+{"index": 781, "text": "The item timestamps don't update in real-time when another user makes a change."}
+{"index": 782, "text": "Integrating with Zendesk to link customer tickets directly to internal workspace items."}
+{"index": 783, "text": "The platform has matured into one of the most reliable tools in our entire tech stack."}
+{"index": 784, "text": "We are experiencing complete service unavailability across all our regional instances."}
+{"index": 785, "text": "What is the recommended approach for handling high-volume webhook events without data loss?"}
+{"index": 786, "text": "The chart data doesn't refresh when the underlying data changes, requires a manual page reload."}
+{"index": 787, "text": "A native screen reader for the platform that narrates item content for hands-free review."}
+{"index": 788, "text": "The customer onboarding specialist assigned to us made an enormous difference in our setup."}
+{"index": 789, "text": "A critical automated notification hasn't been sent for 4 hours. Compliance risk for our team."}
+{"index": 790, "text": "How do I add custom branding to the email notifications sent from the platform?"}
+{"index": 791, "text": "When a long-running operation completes in the background, there's no notification to the user."}
+{"index": 792, "text": "The ability to bulk-convert items of one type to another without losing associated data."}
+{"index": 793, "text": "The real-time presence indicators showing active users are a subtle but very useful feature."}
+{"index": 794, "text": "Our payment gateway integration stopped working after a server-side update. Revenue impact."}
+{"index": 795, "text": "What is the maximum number of concurrent users the platform can support reliably?"}
+{"index": 796, "text": "The settings toggle switches look identical whether on or off at a glance, needs better contrast."}
+{"index": 797, "text": "An analytics dashboard specifically for annotation quality and inter-annotator agreement."}
+{"index": 798, "text": "The consistent improvement in data export reliability has made our reporting process much smoother."}
+{"index": 799, "text": "Our critical production workspace has been inaccessible for the last 2 hours. Immediate escalation needed."}
+{"index": 800, "text": "How do I create a custom report that aggregates data across multiple workspaces?"}
+{"index": 801, "text": "The inline editing mode doesn't show unsaved changes indicator, easy to lose edits."}
+{"index": 802, "text": "A built-in changelog per workspace to document significant configuration changes by admins."}
+{"index": 803, "text": "I love that the platform sends detailed release notes. Helps us plan for changes proactively."}
+{"index": 804, "text": "Our automated billing system triggered a triple charge this billing cycle. Need resolution now."}
+{"index": 805, "text": "How do I configure the platform to work behind our organization's web proxy?"}
+{"index": 806, "text": "When I try to sort by a custom field, the sort order is applied incorrectly."}
+{"index": 807, "text": "Integrating with Intercom to log customer interactions as items for our support team."}
+{"index": 808, "text": "The nuanced permission system allows us to give exactly the right access level to each person."}
+{"index": 809, "text": "A critical permission setting was incorrectly applied during a batch update, security exposure."}
+{"index": 810, "text": "How do I configure the system to archive items automatically after 6 months of inactivity?"}
+{"index": 811, "text": "The context menu on right-click is missing several options that appear in the regular menu."}
+{"index": 812, "text": "Allowing external contributors to submit items through a public intake form without an account."}
+{"index": 813, "text": "The responsiveness of the UI on high-DPI screens is excellent. Crisp and sharp everywhere."}
+{"index": 814, "text": "The system sent incorrect status emails to all our clients yesterday. Major reputational damage."}
+{"index": 815, "text": "What is the best way to implement pagination when retrieving large datasets via the API?"}
+{"index": 816, "text": "When navigating with arrow keys in a list, the selection jumps two rows instead of one."}
+{"index": 817, "text": "The ability to version-control workspace configurations for safer change management."}
+{"index": 818, "text": "The support knowledge base is genuinely useful, most issues are resolved without contacting support."}
+{"index": 819, "text": "Our entire customer-facing portal has been down for 45 minutes. Users are unable to access anything."}
+{"index": 820, "text": "How do I recover deleted items if they were removed more than 30 days ago?"}
+{"index": 821, "text": "When copy-pasting an item, the attachments are not included in the duplicate."}
+{"index": 822, "text": "A progress bar per project showing how close the team is to completion based on item statuses."}
+{"index": 823, "text": "The product pricing is transparent and fair for the value delivered. Happy to recommend it."}
+{"index": 824, "text": "We need all our data exported immediately, we believe our account has been breached."}
+{"index": 825, "text": "How do I configure automatic deprovisioning of users who haven't logged in for 90 days?"}
+{"index": 826, "text": "Pasting content from a Google Doc brings in invisible characters that break formatting."}
+{"index": 827, "text": "Adding support for checklists within item descriptions with completion tracking."}
+{"index": 828, "text": "The continuous deployment of improvements without service disruption is impressive engineering."}
+{"index": 829, "text": "All our users lost their session simultaneously and cannot log back in. Active incident."}
+{"index": 830, "text": "How do I configure a read-replica for the workspace that a separate analytics tool can query?"}
+{"index": 831, "text": "The resizable column feature doesn't work on the first column, it stays fixed-width."}
+{"index": 832, "text": "A marketplace of pre-built automation templates contributed by the community."}
+{"index": 833, "text": "The data quality and accuracy of the export function is exactly what we need for compliance."}
+{"index": 834, "text": "Our monitoring is showing a memory leak in the API layer causing progressively slower responses."}
+{"index": 835, "text": "What is the process to transfer account ownership to a different email address?"}
+{"index": 836, "text": "Tabs within item detail panels cannot be navigated with keyboard, only mouse works."}
+{"index": 837, "text": "The ability to annotate with bounding boxes would extend the tool to image labeling tasks."}
+{"index": 838, "text": "The integration with our identity provider was flawless. Zero issues during rollout."}
+{"index": 839, "text": "A critical real-time sync has not updated in 3 hours, our operations team is working blind."}
+{"index": 840, "text": "How do I configure SCIM provisioning to sync users from our identity provider?"}
+{"index": 841, "text": "The label counter in the summary doesn't update when items are unchecked from the selection."}
+{"index": 842, "text": "Allowing workspace owners to create custom tutorials and walkthroughs for onboarding new users."}
+{"index": 843, "text": "The fact that your engineers monitor the community forum and respond directly is exceptional."}
+{"index": 844, "text": "Our billing account was merged with another company's account after a system error."}
+{"index": 845, "text": "What connectors do you have for connecting to enterprise data warehouses like Snowflake?"}
+{"index": 846, "text": "The color indicator for priority level is almost invisible in the default light theme."}
+{"index": 847, "text": "Introducing AI-powered anomaly detection for flagging unusual patterns in annotated datasets."}
+{"index": 848, "text": "The platform adapts effortlessly to how different teams want to work. Impressive flexibility."}
+{"index": 849, "text": "We are facing a complete service outage with no ETA and no communication from your team."}
+{"index": 850, "text": "How do I configure the platform to automatically scale resources during peak usage periods?"}
+{"index": 851, "text": "The select-all button in the list view selects items from other pages that are not visible."}
+{"index": 852, "text": "Custom status transitions with required fields and comments before the transition is allowed."}
+{"index": 853, "text": "The product has consistently delivered value over 4 years. One of our best long-term investments."}
+{"index": 854, "text": "We have been unable to access production for 90 minutes. Every minute of downtime costs us money."}
+{"index": 855, "text": "How do I configure auto-population of fields based on the item creator's profile?"}
+{"index": 856, "text": "The progress tracker shows 100% but there are still 5 uncompleted items in the view."}
+{"index": 857, "text": "A time-boxed labeling session mode where the timer counts down and automatically submits."}
+{"index": 858, "text": "The way feedback is genuinely incorporated into the product roadmap builds real trust."}
+{"index": 859, "text": "Our entire annotation history has been corrupted by an export/import cycle gone wrong."}
+{"index": 860, "text": "What is the maximum retention period for system logs and audit trails?"}
+{"index": 861, "text": "When saving with unsaved changes and navigating away, the warning prompt doesn't always appear."}
+{"index": 862, "text": "Batch annotation where multiple items with the same label can be submitted in a single action."}
+{"index": 863, "text": "The improvements in annotation efficiency this year have meaningfully reduced our time to label."}
+{"index": 864, "text": "Our automated daily backup job has not run in 5 days. Significant data loss risk."}
+{"index": 865, "text": "How do I configure the tool to require a justification comment when rejecting an item?"}
+{"index": 866, "text": "The form resets to its default state if the browser tab becomes inactive for too long."}
+{"index": 867, "text": "An inter-annotator agreement score displayed per label after enough annotations are collected."}
+{"index": 868, "text": "The quality of the product has allowed us to scale our data operation to 10x original volume."}
+{"index": 869, "text": "An unplanned configuration change has taken our annotation pipeline offline. Immediate help needed."}
+{"index": 870, "text": "How do I configure the conflict resolution strategy when two annotators disagree on a label?"}
+{"index": 871, "text": "The item title becomes editable on double-click but there is no visible indicator this is possible."}
+{"index": 872, "text": "Automated quality checks that flag annotations that deviate significantly from the consensus."}
+{"index": 873, "text": "The labeling interface is the most efficient we've used, minimal clicks, maximum throughput."}
+{"index": 874, "text": "Our quality review queue has been stuck, no items are moving to the review stage."}
+{"index": 875, "text": "How do I export annotations in a format compatible with TensorFlow's data format?"}
+{"index": 876, "text": "The column header sort arrows are too small to click accurately on touchscreen devices."}
+{"index": 877, "text": "Annotation guidelines displayed contextually alongside each item to improve consistency."}
+{"index": 878, "text": "The annotation speed improvements have reduced our time-to-label by 40%. Transformative."}
+{"index": 879, "text": "Our annotation queue is empty but we have 5,000 unlabeled items in the dataset. Something broke."}
+{"index": 880, "text": "What export formats are supported for downstream ML pipeline compatibility?"}
+{"index": 881, "text": "After submitting a label and moving to the next item, the previous labels are still highlighted."}
+{"index": 882, "text": "A pre-labeling feature that suggests labels based on a trained model's predictions."}
+{"index": 883, "text": "The keyboard-first annotation interface is a game changer for high-throughput labeling teams."}
+{"index": 884, "text": "Our active labeling campaign ended prematurely after the chunk allocation system crashed."}
+{"index": 885, "text": "How do I configure the labeling interface to show additional context alongside the main text?"}
+{"index": 886, "text": "Switching to the statistics view during labeling resets my position in the current chunk."}
+{"index": 887, "text": "A quality-weighted annotation mode where experienced labelers' answers count more."}
+{"index": 888, "text": "The chunk allocation system ensures fair distribution of work, no one gets stuck with all the hard cases."}
+{"index": 889, "text": "Our labeling progress was reset overnight, all completed chunks now show as unfinished."}
+{"index": 890, "text": "How do I configure the chunk size to match our team's daily annotation capacity?"}
+{"index": 891, "text": "The label confidence scoring field doesn't save when submitted alongside the label selection."}
+{"index": 892, "text": "Ability to create annotation campaigns with a defined start date, end date, and target count."}
+{"index": 893, "text": "The contributor statistics give our team lead excellent visibility into who is doing what."}
+{"index": 894, "text": "The annotation platform lost all progress tracking data after a server restart last night."}
+{"index": 895, "text": "How do I set up a review pass where a second annotator validates the first annotator's labels?"}
+{"index": 896, "text": "The label distribution chart updates with a delay, it doesn't reflect the last few annotations."}
+{"index": 897, "text": "A label weighting system that applies different priorities to labels during model training export."}
+{"index": 898, "text": "The annotation throughput metrics in the stats view are exactly what our project managers needed."}
+{"index": 899, "text": "All annotation data from the last campaign has been lost after a failed database compaction job."}
+{"index": 900, "text": "How do I configure multi-label annotation so that at least one label must always be selected?"}
+{"index": 901, "text": "The chunk progress bar doesn't visually update after each annotation is submitted."}
+{"index": 902, "text": "An annotation calendar heatmap showing labeling activity per contributor over time."}
+{"index": 903, "text": "The real-time stats make it easy to see at a glance how much of the dataset is complete."}
+{"index": 904, "text": "The session resumed from the exact item I was on before logging out. Seamless continuity."}
+{"index": 905, "text": "How do I add context metadata to each item such as source, date, or category for annotators to see?"}
+{"index": 906, "text": "After completing a chunk, the platform shows the wrong message instead of the done screen."}
+{"index": 907, "text": "A skip reason field so annotators can explain why they skipped an item for future review."}
+{"index": 908, "text": "The ability to annotate by category makes it easy to maintain structured, consistent labels."}
+{"index": 909, "text": "Our annotation team's efficiency doubled after switching to keyboard-first mode. Incredible ROI."}
+{"index": 910, "text": "How do I restrict the annotation view to show only items that have never been labeled before?"}
+{"index": 911, "text": "The label grid layout breaks when there are more than 20 labels, some labels become invisible."}
+{"index": 912, "text": "A read-only review mode where supervisors can browse annotations without accidentally changing them."}
+{"index": 913, "text": "The active contributor count in the stats view is a small touch that creates great team motivation."}
+{"index": 914, "text": "Multiple annotators have been silently assigned to the same chunk causing duplicate annotations."}
+{"index": 915, "text": "How do I export the annotation data in JSONL format for ingestion into a training pipeline?"}
+{"index": 916, "text": "Completed items in the contributor table should show a checkmark to make it clear they're done."}
+{"index": 917, "text": "A label agreement score per item showing how consistently it was labeled across annotators."}
+{"index": 918, "text": "Being able to see my personal annotation speed trends has helped me improve my throughput."}
+{"index": 919, "text": "The annotation session was terminated early and the partially completed chunk was lost."}
+{"index": 920, "text": "How do I configure a minimum required labels per item before submission is allowed?"}
+{"index": 921, "text": "After submitting the last item in my chunk, the app hangs instead of transitioning to the done screen."}
+{"index": 922, "text": "A summary screen at the end of each chunk showing how many were labeled and how many skipped."}
+{"index": 923, "text": "The labeling progress percentage shown in the header is always accurate and motivating."}
+{"index": 924, "text": "Our team completed 80% of the annotations and now the system says no dataset is available."}
+{"index": 925, "text": "How do I import a dataset that has more than 100,000 items efficiently?"}
+{"index": 926, "text": "The undo function reverts to the wrong previous label instead of the immediately prior one."}
+{"index": 927, "text": "Displaying a confidence score input alongside the label buttons for ambiguous items."}
+{"index": 928, "text": "The fact that annotators can't see each other's labels prevents anchoring bias. Smart design."}
+{"index": 929, "text": "The dataset was loaded correctly but item index 0 is being skipped during the labeling session."}
+{"index": 930, "text": "How do I configure a second-pass review queue for low-confidence or disagreed annotations?"}
+{"index": 931, "text": "The statistics page is showing contributor data from a previous project instead of the current one."}
+{"index": 932, "text": "A way to mark items as ambiguous so they can be reviewed later by a more senior annotator."}
+{"index": 933, "text": "The minimal interface reduces cognitive load significantly. Perfect for long annotation sessions."}
+{"index": 934, "text": "After a network disconnect and reconnect, the current item was submitted twice with different labels."}
+{"index": 935, "text": "How do I set up label validation rules to prevent logically conflicting label combinations?"}
+{"index": 936, "text": "The keyboard shortcuts panel is missing some shortcuts that are documented in the help page."}
+{"index": 937, "text": "A daily annotation goal tracker that sends a reminder if the team falls behind the target."}
+{"index": 938, "text": "The annotation tool handles long text items gracefully without breaking the layout."}
+{"index": 939, "text": "Items that were skipped are not being counted in the final coverage percentage. Inaccurate stats."}
+{"index": 940, "text": "How do I configure the tool to support span-level annotation within a text item?"}
+{"index": 941, "text": "The label selection persists after navigating forward to a new item, should reset automatically."}
+{"index": 942, "text": "Integration with active learning pipelines to prioritize the most informative items for labeling."}
+{"index": 943, "text": "The annotation guidelines embedded in the interface have dramatically improved consistency across our team."}
+{"index": 944, "text": "The annotation cursor jumped backward 20 items without any action from me. Data may be at risk."}
+{"index": 945, "text": "How do I configure label hierarchies where selecting a parent label auto-selects child labels?"}
+{"index": 946, "text": "After the labeling session ends, there is no way to see a summary of what was annotated."}
+{"index": 947, "text": "Exporting the annotation results directly into the training format for our ML framework."}
+{"index": 948, "text": "The contribution statistics have become a healthy competitive motivator for our annotation team."}
+{"index": 949, "text": "The chunk allocation broke down halfway through our labeling campaign, some chunks are unassigned."}
+{"index": 950, "text": "How do I implement a consensus-based labeling mode requiring agreement from at least 3 annotators?"}
+{"index": 951, "text": "The label keyboard shortcut displayed in the button doesn't match the actual key that activates it."}
+{"index": 952, "text": "Inline annotation guidelines that expand on hover would reduce the need to leave the labeling interface."}
+{"index": 953, "text": "The straightforward self-hosting setup is one of the main reasons we chose this tool."}
+{"index": 954, "text": "The annotation history for the last 48 hours was deleted during what appears to be an incorrect cleanup job."}
+{"index": 955, "text": "How do I configure the platform to distribute new items to annotators as soon as they complete a chunk?"}
+{"index": 956, "text": "When I label the last item in my chunk, the tool shows me a new chunk without confirming the previous chunk was saved."}
+{"index": 957, "text": "A heatmap of label frequency over time would help detect concept drift in annotation patterns."}
+{"index": 958, "text": "The self-hosted deployment guide is clear and reproducible. Had it running in under an hour."}
+{"index": 959, "text": "An entire week's worth of labeling work has disappeared. We need data recovery immediately."}
+{"index": 960, "text": "How do I configure the platform to prevent the same annotator from labeling the same item twice?"}
+{"index": 961, "text": "The annotation view doesn't indicate whether an item has already been labeled in a previous pass."}
+{"index": 962, "text": "A feature to export annotation disagreements as a separate dataset for analysis."}
+{"index": 963, "text": "The clean data model and well-documented API made integrating with our ML pipeline straightforward."}
+{"index": 964, "text": "Our annotation pipeline produced zero records today even though 50 annotators were active."}
+{"index": 965, "text": "What is the best strategy to manage a labeling team of 200 people across multiple time zones?"}
+{"index": 966, "text": "The label count badge on buttons doesn't update in real-time when another annotator is working simultaneously."}
+{"index": 967, "text": "Weighted sampling during chunk allocation so that rare items are labeled proportionally more."}
+{"index": 968, "text": "The active/inactive status for annotators in the stats view helps manage resourcing in real-time."}
+{"index": 969, "text": "The production annotation dataset was overwritten by a test run. We need an emergency restore."}
+{"index": 970, "text": "How do I configure the labeling task to show annotators only items from a specific date range?"}
+{"index": 971, "text": "Items marked as skipped reappear in future labeling chunks instead of being excluded."}
+{"index": 972, "text": "The ability to define label exclusion rules where certain labels cannot be combined."}
+{"index": 973, "text": "The progress visualization across all contributors gives management exactly the visibility they need."}
+{"index": 974, "text": "The dataset loading failed silently and annotators spent an hour labeling against an old dataset version."}
+{"index": 975, "text": "How do I configure the platform to assign higher priority items to more experienced annotators?"}
+{"index": 976, "text": "The chunk completion confirmation dialog is missing since the last update."}
+{"index": 977, "text": "An annotation speed leaderboard to encourage friendly competition within the team."}
+{"index": 978, "text": "The label distribution stats reset after each session instead of accumulating across the project."}
+{"index": 979, "text": "Our annotation coverage reached 100% but 300 items still appear as unlabeled in the export."}
+{"index": 980, "text": "How do I configure the platform to enforce a minimum annotation quality score before accepting a submission?"}
+{"index": 981, "text": "The progress.jsonl file grew to an unexpected size due to a logging loop in the backend."}
+{"index": 982, "text": "Configurable chunk sizes per annotator based on their experience level and daily capacity."}
+{"index": 983, "text": "The multi-label capability combined with keyboard shortcuts makes annotation extremely fast."}
+{"index": 984, "text": "A newly joined annotator modified 500 items incorrectly. We need to revert all their changes."}
+{"index": 985, "text": "How do I configure the tool to display a short guideline for each label next to its button?"}
+{"index": 986, "text": "The dataset statistics panel shows totals that don't match the actual annotation count in the export."}
+{"index": 987, "text": "A confidence threshold filter to only include annotations above a certain certainty level in the export."}
+{"index": 988, "text": "The append-only JSONL storage gives us great confidence that no data will be lost unexpectedly."}
+{"index": 989, "text": "The annotation tool is returning items from a different dataset than the one currently configured."}
+{"index": 990, "text": "How do I configure automatic label suggestions based on semantic similarity to previously labeled items?"}
+{"index": 991, "text": "After refreshing the page mid-annotation, the session restarts from the beginning instead of resuming."}
+{"index": 992, "text": "A coverage heatmap showing which parts of the dataset have been annotated and which remain."}
+{"index": 993, "text": "The statistics view is the most useful project management tool our annotation lead has ever had."}
+{"index": 994, "text": "The dataset was replaced mid-session without restarting the backend, annotations applied to wrong items."}
+{"index": 995, "text": "What is the recommended way to run multiple simultaneous labeling campaigns on the same dataset?"}
+{"index": 996, "text": "The label buttons flicker briefly after each submission which is distracting during long sessions."}
+{"index": 997, "text": "A confusion matrix between annotators to identify systematic disagreements for retraining purposes."}
+{"index": 998, "text": "The platform handles our 1 million item dataset without any noticeable performance degradation."}
+{"index": 999, "text": "The entire labeling system is unresponsive and 30 annotators are sitting idle. This needs fixing now."}
