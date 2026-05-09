@@ -652,7 +652,7 @@ input, select, textarea { font-family: inherit; color: inherit; }
 }
 .login-submit:hover:not(:disabled) { background: #2A3142; }
 .login-submit:disabled { opacity: 0.35; cursor: not-allowed; box-shadow: none; }
-.login-hint { margin-top: 14px; font-size: 11px; color: var(--c-muted); text-align: center; line-height: 1.5; }
+.login-hint { margin-top: 14px; font-size: 11px; color: var(--ink-3); text-align: center; line-height: 1.5; }
 
 /* ─────────────────────────────────────────────────────────────
    MISC
@@ -669,3 +669,73 @@ input, select, textarea { font-family: inherit; color: inherit; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--border-2); border-radius: 99px; border: 2px solid var(--bg); }
 ::-webkit-scrollbar-thumb:hover { background: var(--ink-3); }
+
+/* ─────────────────────────────────────────────────────────────
+   MOBILE
+   ───────────────────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .page-main {
+    padding: 76px 16px 32px;
+  }
+
+  /* Floating menu */
+  .floating-menu {
+    top: 12px;
+    gap: 2px;
+    padding: 4px;
+  }
+  .fm-item {
+    padding: 7px 13px 7px 11px;
+    font-size: 13px;
+    gap: 6px;
+  }
+
+  /* Verbatim card */
+  .verbatim-card {
+    height: auto;
+    min-height: 160px;
+  }
+  .vc-body {
+    padding: 24px 20px;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  /* Label buttons — bigger tap targets */
+  .label-btn {
+    height: 44px;
+    font-size: 14px;
+    padding: 0 14px 0 11px;
+  }
+
+  /* Actions */
+  .btn-primary { height: 52px; font-size: 15px; }
+
+  /* Stats KPI */
+  .kpi-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .kpi { padding: 14px 16px; }
+  .kpi-value { font-size: 22px; }
+  .kpi-value .of { font-size: 15px; }
+
+  /* Label distribution — single column on mobile */
+  .dist {
+    grid-template-columns: 1fr;
+    padding: 4px 16px 8px;
+  }
+
+  /* Contributors table — scrollable */
+  .panel { overflow-x: auto; }
+  .tbl th, .tbl td { padding: 10px 14px; white-space: nowrap; }
+
+  /* Login */
+  .login-form {
+    width: 100%;
+    padding: 32px 24px;
+  }
+
+  /* Chunk strip */
+  .chunk-strip { padding: 10px 14px; }
+}

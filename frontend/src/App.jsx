@@ -15,7 +15,8 @@ export default function App() {
   const [saving, setSaving]     = useState(false);
   const [todayCount, setTodayCount] = useState(0);
   const [stats, setStats]       = useState(null);
-  const [keysEnabled, setKeysEnabled] = useState(true);
+  const isMobile = useMemo(() => window.matchMedia('(pointer: coarse)').matches, []);
+  const [keysEnabled, setKeysEnabled] = useState(() => !window.matchMedia('(pointer: coarse)').matches);
 
   const fetchLabels = useCallback(async () => {
     const r = await fetch(`${API}/labels`);
@@ -154,7 +155,7 @@ export default function App() {
 
   return (
     <div className="page-wrap">
-      <FloatingMenu view={view} setView={setView} keysEnabled={keysEnabled} onToggleKeys={() => setKeysEnabled(v => !v)} />
+      <FloatingMenu view={view} setView={setView} keysEnabled={keysEnabled} onToggleKeys={() => setKeysEnabled(v => !v)} isMobile={isMobile} />
       {(!session || session.total_dataset === 0) ? (
         <div className="empty-state">No dataset available.</div>
       ) : session.done && view === "label" ? (
@@ -184,7 +185,7 @@ export default function App() {
 /* ─────────────────────────────────────────────────────────────
    FLOATING MENU
    ───────────────────────────────────────────────────────────── */
-function FloatingMenu({ view, setView, keysEnabled, onToggleKeys }) {
+function FloatingMenu({ view, setView, keysEnabled, onToggleKeys, isMobile }) {
   return (
     <div className="floating-menu">
       <button
@@ -199,14 +200,16 @@ function FloatingMenu({ view, setView, keysEnabled, onToggleKeys }) {
       >
         <Icon name="chart" /> Statistics
       </button>
-      <div className="fm-sep" />
-      <button className="fm-keys-toggle" onClick={onToggleKeys} title={keysEnabled ? "Disable shortcuts" : "Enable shortcuts"}>
-        <Keyboard size={13} strokeWidth={1.7} />
-        <span className={`toggle-pill ${keysEnabled ? "is-on" : ""}`}>
-          <span className="toggle-knob" />
-        </span>
-        <kbd className="kbd kbd--space">␣</kbd>
-      </button>
+      {!isMobile && <>
+        <div className="fm-sep" />
+        <button className="fm-keys-toggle" onClick={onToggleKeys} title={keysEnabled ? "Disable shortcuts" : "Enable shortcuts"}>
+          <Keyboard size={13} strokeWidth={1.7} />
+          <span className={`toggle-pill ${keysEnabled ? "is-on" : ""}`}>
+            <span className="toggle-knob" />
+          </span>
+          <kbd className="kbd kbd--space">␣</kbd>
+        </button>
+      </>}
     </div>
   );
 }
