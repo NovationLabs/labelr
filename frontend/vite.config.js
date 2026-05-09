@@ -8,8 +8,8 @@ export default defineConfig({
     port: 5173,
     allowedHosts: [
       'localhost',
-      'your-domain.com', // replace with your actual domain
-    ],
+      process.env.ALLOWED_HOST,
+    ].filter(Boolean),
     proxy: {
       '/api': {
         target: process.env.BACKEND_URL || 'http://localhost:8000',

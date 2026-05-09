@@ -4,6 +4,10 @@ Self-hosted text labeling tool for multi-label classification. Multiple contribu
 
 Built with **FastAPI** + **React/Vite**, runs entirely in Docker Compose — no external dependencies.
 
+**Try it live → [labelr.novationlabs.fr](https://labelr.novationlabs.fr)**
+
+> **Don't want to read through the code?** Open this repo in [Claude Code](https://claude.ai/code), ask it to read `README.md` and `docs/CLAUDE.md`, and it will understand the full project instantly — architecture, pitfalls, and all.
+
 <table>
   <tr>
     <td align="center" width="50%">
@@ -34,16 +38,20 @@ Built with **FastAPI** + **React/Vite**, runs entirely in Docker Compose — no 
 git clone https://github.com/NovationLabs/labelr.git
 cd labelr
 
-# 2. Add your dataset
+# 2. Configure
+cp .env.example .env
+# Edit .env to set your domain and ports
+
+# 3. Add your dataset
 # Create data/dataset.jsonl — one JSON object per line, must have "index" and "text" fields:
 # {"index": 0, "text": "Your first text item"}
 # {"index": 1, "text": "Your second text item"}
 
-# 3. (Optional) Add custom labels
+# 4. (Optional) Add custom labels
 # Create data/labels.json — JSON array of strings:
 # ["Label A", "Label B", "Label C", "Other"]
 
-# 4. Start
+# 5. Start
 docker compose up -d
 ```
 

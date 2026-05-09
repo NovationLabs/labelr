@@ -652,6 +652,7 @@ input, select, textarea { font-family: inherit; color: inherit; }
 }
 .login-submit:hover:not(:disabled) { background: #2A3142; }
 .login-submit:disabled { opacity: 0.35; cursor: not-allowed; box-shadow: none; }
+.login-hint { margin-top: 14px; font-size: 11px; color: var(--c-muted); text-align: center; line-height: 1.5; }
 
 /* ─────────────────────────────────────────────────────────────
    MISC

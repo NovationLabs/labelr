@@ -443,6 +443,7 @@ function LoginScreen({ onLogin }) {
         <button className="login-submit" type="submit" disabled={!pseudo.trim()}>
           Start
         </button>
+        <p className="login-hint">Your name is used to track your progress and resume where you left off.</p>
       </form>
     </div>
   );
