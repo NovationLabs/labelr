@@ -134,6 +134,19 @@ labelr/
 └── docker-compose.yml
 ```
 
+## Hosting behind a custom domain
+
+If you expose the frontend via a reverse proxy or tunnel (e.g. Cloudflare Tunnel, nginx), add your domain to the `allowedHosts` list in `frontend/vite.config.js`:
+
+```js
+allowedHosts: [
+  'localhost',
+  'your-domain.com', // replace with your actual domain
+],
+```
+
+Without this, Vite will block requests with a "host not allowed" error.
+
 ## Development
 
 Hot reload is enabled by default:

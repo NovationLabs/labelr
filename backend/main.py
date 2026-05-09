@@ -133,6 +133,10 @@ def update_cursor(labeler: str, cursor: int):
 
 # ── routes ────────────────────────────────────────────────────────────────────
 
+@app.get("/")
+def health():
+    return {"status": "ok", "dataset": len(DATASET)}
+
 @app.get("/labels")
 def get_labels():
     if LABELS_CONFIG.exists():

@@ -198,7 +198,11 @@ Question · Complaint · Suggestion · Praise · Bug Report · Feature Request �
 ## Known pitfalls
 
 1. **Dataset re-indexing**: always sequential 0-based, otherwise `/label` returns 404.
-2. **Backend keeps dataset in memory**: after modifying `dataset_mini.jsonl`, restart the backend container (`docker compose restart backend`).
+2. **Backend keeps dataset in memory**: after modifying `dataset.jsonl`, restart the backend container (`docker compose restart backend`).
 3. **progress.jsonl owned by root**: if created by the container, editing from the host requires `sudo`. To reset: `sudo truncate -s 0 data/progress.jsonl`.
 4. **Tab disabled with keysEnabled=false**: Tab must be handled **before** the `!keysEnabled` check in the keydown handler.
 5. **DoneScreen inside the layout**: do not early-return for the done state, or the FloatingMenu disappears. Insert it as a branch in the main ternary expression.
+6. **Vite blocked host error**: when exposing the frontend via a custom domain or tunnel, add the domain to `allowedHosts` in `frontend/vite.config.js` — otherwise Vite rejects the request with "host not allowed".
+   ```js
+   allowedHosts: ['localhost', 'your-domain.com']
+   ```
