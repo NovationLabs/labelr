@@ -2,8 +2,9 @@ import { useState, useEffect, useCallback, useMemo } from "react";
 import { Tag, ChartArea, RefreshCw, Keyboard } from "lucide-react";
 
 const API = "/api";
-const KEYBOARD_KEYS = "qwertyuiopasdfghjklzxcvbnm".split("");
-// const KEYBOARD_KEYS = "azertyuiopqsdfghjklmwxcvbn".split("");
+const KEYBOARD_KEYS = import.meta.env.VITE_KEYBOARD_LAYOUT === 'AZERTY'
+  ? "azertyuiopqsdfghjklmwxcvbn".split("")
+  : "qwertyuiopasdfghjklzxcvbnm".split("");
 
 export default function App() {
   const [user, setUser]         = useState(null);
