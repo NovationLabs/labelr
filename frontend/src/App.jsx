@@ -66,7 +66,10 @@ export default function App() {
   }, [cursor]);
 
   useEffect(() => {
-    if (view === "stats" && user) fetchStats();
+    if (view !== "stats" || !user) return;
+    fetchStats();
+    const id = setInterval(fetchStats, 30_000);
+    return () => clearInterval(id);
   }, [view, user, fetchStats]);
 
   const toggleLabel = useCallback((label) => {
