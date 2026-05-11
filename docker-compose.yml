@@ -25,6 +25,7 @@ services:
       - BACKEND_URL=http://backend:8000
       - ALLOWED_HOST=${ALLOWED_HOST:-localhost}
       - KEYBOARD_LAYOUT=${KEYBOARD_LAYOUT:-QWERTY}
+      - SHUFFLE=${SHUFFLE:-False}
     depends_on:
       - backend
     restart: unless-stopped

@@ -5,6 +5,7 @@ export default defineConfig({
   plugins: [react()],
   define: {
     'import.meta.env.VITE_KEYBOARD_LAYOUT': JSON.stringify(process.env.KEYBOARD_LAYOUT || 'QWERTY'),
+    'import.meta.env.VITE_SHUFFLE': JSON.stringify(process.env.SHUFFLE || 'False'),
   },
   server: {
     host: '0.0.0.0',

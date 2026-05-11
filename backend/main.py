@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import json
 import os
+import random
 from pathlib import Path
 from datetime import datetime, timezone
 import threading
@@ -17,7 +18,10 @@ ANNOT_FILE    = DATA_DIR / "labels.jsonl"
 PROGRESS_FILE = DATA_DIR / "progress.jsonl"
 
 CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", "10"))
-LABELS     = json.loads(os.getenv("LABELS", '["Question","Complaint","Suggestion","Praise","Bug Report","Feature Request","Urgent","Other"]'))
+LABELS  = json.loads(os.getenv("LABELS", '["Question","Complaint","Suggestion","Praise","Bug Report","Feature Request","Urgent","Other"]'))
+SHUFFLE = os.getenv("SHUFFLE", "False").lower() == "true"
+if SHUFFLE:
+    random.shuffle(LABELS)
 write_lock = threading.RLock()
 # Dataset loaded once into memory at startup
 DATASET: list[dict] = []

@@ -19,19 +19,42 @@ labelr/
 ├── frontend/
 │   ├── Dockerfile          # node:20-alpine, npm run dev --host (HMR)
 │   ├── index.html
-│   ├── vite.config.js      # proxy /api → backend:8000
+│   ├── vite.config.js      # proxy /api → backend:8000, exposes env vars to React
 │   ├── package.json        # lucide-react included
 │   └── src/
 │       ├── main.jsx        # React entry point
 │       ├── App.jsx         # all UI logic (single component file)
 │       └── index.css       # vanilla CSS, custom design tokens
 ├── data/                   # mounted as Docker volume
-│   ├── dataset.jsonl       # dataset
+│   ├── dataset.jsonl       # source dataset (user-provided)
 │   ├── labels.jsonl        # annotations (append-only)
-│   ├── labels.json         # optional: custom label list (overrides defaults)
 │   └── progress.jsonl      # per-chunk progress (append-only)
+├── .env                    # local config (not committed)
+├── .env.example            # template
 └── docker-compose.yml
 ```
+
+---
+
+## Configuration
+
+All runtime config lives in `.env` and is passed via `docker-compose.yml`. **No hardcoded values in source files.**
+
+| Variable | Default | Where used |
+|---|---|---|
+| `FRONTEND_PORT` | `3000` | docker-compose ports |
+| `BACKEND_PORT` | `8000` | docker-compose ports |
+| `ALLOWED_HOST` | `your-domain.com` | vite.config.js allowedHosts |
+| `KEYBOARD_LAYOUT` | `QWERTY` | vite.config.js → `VITE_KEYBOARD_LAYOUT` → App.jsx |
+| `CHUNK_SIZE` | `10` | backend/main.py |
+| `SHUFFLE` | `False` | backend/main.py (startup shuffle) + vite.config.js → `VITE_SHUFFLE` → App.jsx (per-submit shuffle) |
+| `LABELS` | default set | backend/main.py — JSON array string |
+
+### How env vars reach the frontend
+
+`docker-compose.yml` passes env vars to the frontend container → `vite.config.js` reads them via `process.env.*` and exposes them as `import.meta.env.VITE_*` via the `define` block → `App.jsx` reads `import.meta.env.VITE_*`.
+
+Adding a new frontend env var requires touching all three: `.env`, `docker-compose.yml`, `vite.config.js`, and `App.jsx`.
 
 ---
 
@@ -48,6 +71,7 @@ docker compose up -d
 - Frontend: Vite HMR via volume mount (`./frontend/src`, `index.html`, `public`, `vite.config.js`)
 - Backend: uvicorn `--reload` via volume mount (`./backend:/app`)
 - No `docker compose build` needed for code changes
+- `docker compose up --build -d` required when changing `Dockerfile`, `requirements.txt`, `package.json`, or env vars consumed at build time
 
 ---
 
@@ -61,12 +85,19 @@ Everything is append-only JSONL on `/data/` (mounted from `./data`).
 | `dataset.jsonl` | source items, indexed 0–N sequentially |
 | `labels.jsonl` | one line per annotation (`{index, labeler, classes, text, …}`) |
 | `progress.jsonl` | one line per chunk update (`{labeler, start, end, cursor, …}`) |
-| `labels.json` | optional custom label list (array of strings) |
 
 **Important**: dataset indices are array positions (0-based). `DATASET[body.index]` — any dataset modification must re-index sequentially.
 
+### Labels
+Labels are loaded from the `LABELS` env var (JSON array string). They are shuffled at startup if `SHUFFLE=True`. There is no `data/labels.json` — labels are configured entirely via `.env`.
+
+### Shuffle
+`SHUFFLE=True` in `.env`:
+- Backend: `random.shuffle(LABELS)` at startup → `/labels` returns a different order each time the server starts
+- Frontend: after each successful submit, `setLabels(prev => [...prev].sort(() => Math.random() - 0.5))` re-shuffles the displayed buttons
+
 ### Chunk system
-- `CHUNK_SIZE = 200` items per chunk
+- `CHUNK_SIZE` items per chunk (set via `.env`)
 - Each labeler receives a chunk via `get_or_allocate()`, allocated in `progress.jsonl`
 - `load_progress()` → returns only the latest chunk per labeler (for allocation)
 - `load_all_chunks()` → returns all distinct chunks per labeler (for stats)
@@ -76,17 +107,15 @@ Everything is append-only JSONL on `/data/` (mounted from `./data`).
 
 | Route | Method | Description |
 |---|---|---|
-| `GET /labels` | — | List of classes (from `labels.json` or defaults) |
+| `GET /` | — | Health check |
+| `GET /labels` | — | List of classes (from `LABELS` env var, shuffled if `SHUFFLE=True`) |
 | `POST /session` | `{labeler}` | Start/resume a session, returns chunk + items |
 | `POST /label` | `{index, labeler, classes}` | Save annotation + advance cursor |
 | `GET /stats` | — | Global statistics (KPIs, class distribution, contributors) |
-| `GET /export` | — | Full export as JSON |
+| `GET /export` | — | Full export as JSON (no auth — internal use only) |
 
 ### `load_annotations()`
 Reads `labels.jsonl` and keeps the **last** annotation per index (dict keyed by `index`). All routes use this behavior: an annotation can be overwritten by re-submitting the same index.
-
-### `total_by_labeler`
-In `/stats`, total annotations per labeler is computed by iterating `annotations.values()` (all annotations, not just the current chunk).
 
 ---
 
@@ -101,7 +130,7 @@ In `/stats`, total annotations per labeler is computed by iterating `annotations
 | `LabellerView` | Annotation interface |
 | `StatsView` | Statistics dashboard |
 | `LoginScreen` | Name input at startup |
-| `DoneScreen` | Shown in main layout when all items are labeled (no early return → FloatingMenu stays accessible) |
+| `DoneScreen` | Shown in main layout when all items are labeled |
 | `Icon` | Lucide wrapper (Tag, ChartArea, RefreshCw) |
 
 ### Main state (in `App`)
@@ -109,7 +138,7 @@ In `/stats`, total annotations per labeler is computed by iterating `annotations
 user          // string | null
 view          // "label" | "stats"
 session       // object returned by POST /session
-labels        // list of classes
+labels        // list of classes (re-shuffled after each submit if SHUFFLE=True)
 cursor        // index in items[] of the current chunk
 selected      // classes selected for the current item
 saving        // bool (lock during POST /label)
@@ -124,19 +153,15 @@ keysEnabled   // bool — keyboard shortcuts active
 |---|---|---|
 | `Tab` | Switch Label ↔ Statistics | Yes |
 | `Space` | Toggle keysEnabled | Yes |
-| `Q W E R T Y …` / `A Z E R T Y …` | Select label (QWERTY default, AZERTY available) | If keysEnabled |
+| `Q W E R T Y …` / `A Z E R T Y …` | Select label | If keysEnabled |
 | `↵ Enter` | Submit (if ≥1 selected) | If keysEnabled |
 | `Esc` | Skip | If keysEnabled |
 | `⌫ Backspace` | Undo (go back to previous item) | If keysEnabled |
 
-Key mapping — swap the active line in `App.jsx` to change layout:
-```js
-const KEYBOARD_KEYS = "qwertyuiopasdfghjklzxcvbnm".split(""); // QWERTY (default)
-// const KEYBOARD_KEYS = "azertyuiopqsdfghjklmwxcvbn".split(""); // AZERTY
-```
+Layout is set via `KEYBOARD_LAYOUT` in `.env` (`QWERTY` or `AZERTY`). **Do not hardcode in App.jsx.**
 
 ### kbd badges
-Displayed only if `keysEnabled === true`. Style `.kbd`: small bordered box, `text-transform: uppercase`, reduced opacity.
+Displayed only if `keysEnabled === true`. Style `.kbd`: small bordered box, `text-transform: uppercase`, reduced opacity. When `SHUFFLE=True`, keyboard shortcuts shift with the labels after each submit — this is intentional to avoid position/key bias.
 
 ---
 
@@ -146,7 +171,7 @@ Displayed only if `keysEnabled === true`. Style `.kbd`: small bordered box, `tex
 Defined on `:root` — colors, typography, radii. No external UI library.
 
 ### Key points
-- `html { scrollbar-gutter: stable; }` — prevents FloatingMenu shift when scrollbar appears/disappears (viewport scrollbar belongs to `html`, not `body`)
+- `html { scrollbar-gutter: stable; }` — prevents FloatingMenu shift when scrollbar appears/disappears
 - No `overflow: hidden` on `html`/`body` — native document scroll
 - `.page-wrap { min-height: 100vh; }` — allows scroll to work on the stats page
 
@@ -161,10 +186,9 @@ Defined on `:root` — colors, typography, radii. No external UI library.
 
 ## Dataset format
 
-### `dataset.jsonl` / `dataset_mini.jsonl`
-One JSON object per line. Required field: `text` (string). The `index` field is the 0-based array position.
+### `dataset.jsonl`
+One JSON object per line. Required fields: `index` (int, 0-based sequential) and `text` (string).
 
-Minimal example:
 ```json
 {"index": 0, "text": "Your text item here"}
 {"index": 1, "text": "Another text item"}
@@ -173,15 +197,6 @@ Minimal example:
 Any additional fields are preserved and included in the export.
 
 **Note**: the backend does `DATASET[body.index]` (array access by position). If you regenerate the dataset, always re-index 0-based sequentially.
-
-### Custom labels (`data/labels.json`)
-Create this file to override the default labels. Format: JSON array of strings.
-```json
-["Label A", "Label B", "Label C", "Other"]
-```
-
-### Default labels (when `labels.json` is absent)
-Question · Complaint · Suggestion · Praise · Bug Report · Feature Request · Urgent · Other
 
 ---
 
@@ -202,7 +217,5 @@ Question · Complaint · Suggestion · Praise · Bug Report · Feature Request �
 3. **progress.jsonl owned by root**: if created by the container, editing from the host requires `sudo`. To reset: `sudo truncate -s 0 data/progress.jsonl`.
 4. **Tab disabled with keysEnabled=false**: Tab must be handled **before** the `!keysEnabled` check in the keydown handler.
 5. **DoneScreen inside the layout**: do not early-return for the done state, or the FloatingMenu disappears. Insert it as a branch in the main ternary expression.
-6. **Vite blocked host error**: when exposing the frontend via a custom domain or tunnel, add the domain to `allowedHosts` in `frontend/vite.config.js` — otherwise Vite rejects the request with "host not allowed".
-   ```js
-   allowedHosts: ['localhost', 'your-domain.com']
-   ```
+6. **Vite blocked host error**: when exposing via a custom domain, set `ALLOWED_HOST` in `.env` — it is injected into `vite.config.js allowedHosts` automatically.
+7. **Frontend env vars require rebuild**: `VITE_*` vars are baked in at build time. Changing `SHUFFLE`, `KEYBOARD_LAYOUT`, or `ALLOWED_HOST` in `.env` requires `docker compose up --build -d`.

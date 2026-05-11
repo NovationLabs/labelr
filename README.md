@@ -25,7 +25,8 @@ Built with **FastAPI** + **React/Vite**, runs entirely in Docker Compose — no 
 
 - **Multi-label** annotation: assign one or more classes per item
 - **Chunk-based** work allocation: each contributor gets their own slice of the dataset
-- **Keyboard shortcuts** for fast labeling (QWERTY layout, fully navigable without a mouse)
+- **Keyboard shortcuts** for fast labeling (QWERTY or AZERTY, configurable via `.env`)
+- **Shuffle mode**: randomize label order at startup and after each submit to avoid position bias
 - **Live statistics**: coverage, label distribution, per-contributor progress
 - **Append-only storage**: JSONL files, no database required
 - **Hot reload** in development: edit code, see changes instantly
@@ -40,23 +41,36 @@ cd labelr
 
 # 2. Configure
 cp .env.example .env
-# Edit .env to set your domain and ports
+# Edit .env: set your labels, ports, keyboard layout, shuffle mode
 
 # 3. Add your dataset
 # Create data/dataset.jsonl — one JSON object per line, must have "index" and "text" fields:
 # {"index": 0, "text": "Your first text item"}
 # {"index": 1, "text": "Your second text item"}
 
-# 4. (Optional) Add custom labels
-# Create data/labels.json — JSON array of strings:
-# ["Label A", "Label B", "Label C", "Other"]
-
-# 5. Start
+# 4. Start
 docker compose up -d
 ```
 
 - Frontend: http://localhost:3000
 - Backend API: http://localhost:8000
+
+## Configuration (`.env`)
+
+| Variable | Default | Description |
+|---|---|---|
+| `FRONTEND_PORT` | `3000` | Host port for the frontend |
+| `BACKEND_PORT` | `8000` | Host port for the backend API |
+| `ALLOWED_HOST` | `your-domain.com` | Domain added to Vite's allowedHosts |
+| `KEYBOARD_LAYOUT` | `QWERTY` | Shortcut layout: `QWERTY` or `AZERTY` |
+| `CHUNK_SIZE` | `10` | Number of items per labeler chunk |
+| `SHUFFLE` | `False` | Randomize label order at startup and after each submit (`True` or `False`) |
+| `LABELS` | default set | JSON array of label strings |
+
+Example `LABELS`:
+```
+LABELS=["Positive","Negative","Neutral","Other"]
+```
 
 ## Dataset format
 
@@ -68,39 +82,19 @@ Each line in `dataset.jsonl` must be a valid JSON object with at minimum:
 
 The `index` field must be a sequential integer starting at 0. All additional fields are preserved in the export.
 
-## Custom labels
-
-Create `data/labels.json` to define your own label set:
-
-```json
-["Positive", "Negative", "Neutral", "Off-topic", "Other"]
-```
-
-If this file does not exist, the default labels are used: `Question` · `Complaint` · `Suggestion` · `Praise` · `Bug Report` · `Feature Request` · `Urgent` · `Other`.
-
 ## Keyboard shortcuts
 
 | Key | Action |
 |-----|--------|
 | `Tab` | Switch between Label and Statistics views |
 | `Space` | Toggle keyboard shortcuts on/off |
-| `Q W E R T Y …` | Select/deselect labels (QWERTY layout, default) |
-| `A Z E R T Y …` | Select/deselect labels (AZERTY layout, see below) |
+| `Q W E R T Y …` | Select/deselect labels (QWERTY layout) |
+| `A Z E R T Y …` | Select/deselect labels (AZERTY layout) |
 | `Enter` | Submit annotation |
 | `Esc` | Skip item |
 | `Backspace` | Undo last annotation |
 
-### Switching keyboard layout
-
-The default layout is QWERTY. To switch to AZERTY, edit `frontend/src/App.jsx` and swap the active line:
-
-```js
-// QWERTY (default)
-const KEYBOARD_KEYS = "qwertyuiopasdfghjklzxcvbnm".split("");
-
-// AZERTY (uncomment to use instead)
-// const KEYBOARD_KEYS = "azertyuiopqsdfghjklmwxcvbn".split("");
-```
+Set `KEYBOARD_LAYOUT=AZERTY` in `.env` to switch layout.
 
 ## Data storage
 
@@ -111,7 +105,6 @@ All data is stored as append-only JSONL files in the `data/` directory:
 | `dataset.jsonl` | Your source dataset (you provide this) |
 | `labels.jsonl` | All annotations (one line per submission) |
 | `progress.jsonl` | Per-contributor chunk progress |
-| `labels.json` | Optional: custom label list |
 
 The last annotation per item index wins (overwrites are supported by re-submitting).
 
@@ -138,19 +131,16 @@ labelr/
 ├── data/
 │   ├── dataset.jsonl
 │   ├── labels.jsonl
-│   └── process.jsonl
+│   └── progress.jsonl
 └── docker-compose.yml
 ```
 
 ## Hosting behind a custom domain
 
-If you expose the frontend via a reverse proxy or tunnel (e.g. Cloudflare Tunnel, nginx), add your domain to the `allowedHosts` list in `frontend/vite.config.js`:
+If you expose the frontend via a reverse proxy or tunnel (e.g. Cloudflare Tunnel, nginx), set `ALLOWED_HOST` in your `.env`:
 
-```js
-allowedHosts: [
-  'localhost',
-  'your-domain.com', // replace with your actual domain
-],
+```
+ALLOWED_HOST=labelr.yourcompany.com
 ```
 
 Without this, Vite will block requests with a "host not allowed" error.

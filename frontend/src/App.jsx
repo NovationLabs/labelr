@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback, useMemo } from "react";
 import { Tag, ChartArea, RefreshCw, Keyboard } from "lucide-react";
 
 const API = "/api";
+const SHUFFLE_LABELS = import.meta.env.VITE_SHUFFLE === 'True';
 const KEYBOARD_KEYS = import.meta.env.VITE_KEYBOARD_LAYOUT === 'AZERTY'
   ? "azertyuiopqsdfghjklmwxcvbn".split("")
   : "qwertyuiopasdfghjklzxcvbnm".split("");
@@ -85,6 +86,7 @@ export default function App() {
       });
       const d = await r.json();
       setTodayCount(c => c + 1);
+      if (SHUFFLE_LABELS) setLabels(prev => [...prev].sort(() => Math.random() - 0.5));
       if (d.new_chunk) {
         await startSession(user);
       } else if (cursor < items.length - 1) {
