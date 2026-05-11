@@ -6,6 +6,9 @@ services:
     volumes:
       - ./backend:/app
       - ./data:/data
+    environment:
+      - CHUNK_SIZE=${CHUNK_SIZE:-10}
+      - LABELS=${LABELS}
     command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
     restart: unless-stopped
 

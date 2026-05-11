@@ -2,6 +2,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import json
+import os
 from pathlib import Path
 from datetime import datetime, timezone
 import threading
@@ -14,22 +15,10 @@ DATA_DIR.mkdir(exist_ok=True)
 DATASET_FILE  = DATA_DIR / "dataset.jsonl"
 ANNOT_FILE    = DATA_DIR / "labels.jsonl"
 PROGRESS_FILE = DATA_DIR / "progress.jsonl"
-LABELS_CONFIG = DATA_DIR / "labels.json"
 
-CHUNK_SIZE = 10
+CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", "10"))
+LABELS     = json.loads(os.getenv("LABELS", '["Question","Complaint","Suggestion","Praise","Bug Report","Feature Request","Urgent","Other"]'))
 write_lock = threading.RLock()
-
-# Default labels — override by placing a labels.json file in the data directory
-DEFAULT_LABELS = [
-    "Question",
-    "Complaint",
-    "Suggestion",
-    "Praise",
-    "Bug Report",
-    "Feature Request",
-    "Urgent",
-    "Other",
-]
 # Dataset loaded once into memory at startup
 DATASET: list[dict] = []
 
@@ -139,9 +128,7 @@ def health():
 
 @app.get("/labels")
 def get_labels():
-    if LABELS_CONFIG.exists():
-        return json.loads(LABELS_CONFIG.read_text())
-    return DEFAULT_LABELS
+    return LABELS
 
 class SessionBody(BaseModel):
     labeler: str
