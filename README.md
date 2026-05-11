@@ -65,6 +65,7 @@ docker compose up -d
 | `KEYBOARD_LAYOUT` | `QWERTY` | Shortcut layout: `QWERTY` or `AZERTY` |
 | `CHUNK_SIZE` | `10` | Number of items per labeler chunk |
 | `SHUFFLE` | `False` | Randomize label order at startup and after each submit (`True` or `False`) |
+| `EXPORT_TOKEN` | _(empty)_ | If set, required as `?token=` query param on `/export`. Leave empty to disable. |
 | `LABELS` | default set | JSON array of label strings |
 
 Example `LABELS`:
@@ -113,7 +114,7 @@ The last annotation per item index wins (overwrites are supported by re-submitti
 Download all annotations as JSON:
 
 ```bash
-curl http://localhost:8000/export > annotations.json
+curl "http://localhost:3000/api/export?token=your_token" > annotations.json
 ```
 
 ## Architecture

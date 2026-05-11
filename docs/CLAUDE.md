@@ -48,6 +48,7 @@ All runtime config lives in `.env` and is passed via `docker-compose.yml`. **No 
 | `KEYBOARD_LAYOUT` | `QWERTY` | vite.config.js → `VITE_KEYBOARD_LAYOUT` → App.jsx |
 | `CHUNK_SIZE` | `10` | backend/main.py |
 | `SHUFFLE` | `False` | backend/main.py (startup shuffle) + vite.config.js → `VITE_SHUFFLE` → App.jsx (per-submit shuffle) |
+| `EXPORT_TOKEN` | _(empty)_ | If set, `GET /export?token=` must match. Empty = no protection. |
 | `LABELS` | default set | backend/main.py — JSON array string |
 
 ### How env vars reach the frontend
@@ -112,7 +113,7 @@ Labels are loaded from the `LABELS` env var (JSON array string). They are shuffl
 | `POST /session` | `{labeler}` | Start/resume a session, returns chunk + items |
 | `POST /label` | `{index, labeler, classes}` | Save annotation + advance cursor |
 | `GET /stats` | — | Global statistics (KPIs, class distribution, contributors) |
-| `GET /export` | — | Full export as JSON (no auth — internal use only) |
+| `GET /export` | `?token=` | Full export as JSON — protected by `EXPORT_TOKEN` if set |
 
 ### `load_annotations()`
 Reads `labels.jsonl` and keeps the **last** annotation per index (dict keyed by `index`). All routes use this behavior: an annotation can be overwritten by re-submitting the same index.

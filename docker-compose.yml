@@ -1,14 +1,13 @@
 services:
   backend:
     build: ./backend
-    ports:
-      - "${BACKEND_PORT:-8000}:8000"
     volumes:
       - ./backend:/app
       - ./data:/data
     environment:
       - CHUNK_SIZE=${CHUNK_SIZE:-10}
       - LABELS=${LABELS}
+      - EXPORT_TOKEN=${EXPORT_TOKEN:-}
     command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
     restart: unless-stopped
 

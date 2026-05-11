@@ -17,9 +17,10 @@ DATASET_FILE  = DATA_DIR / "dataset.jsonl"
 ANNOT_FILE    = DATA_DIR / "labels.jsonl"
 PROGRESS_FILE = DATA_DIR / "progress.jsonl"
 
-CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", "10"))
-LABELS  = json.loads(os.getenv("LABELS", '["Question","Complaint","Suggestion","Praise","Bug Report","Feature Request","Urgent","Other"]'))
-SHUFFLE = os.getenv("SHUFFLE", "False").lower() == "true"
+CHUNK_SIZE    = int(os.getenv("CHUNK_SIZE", "10"))
+LABELS        = json.loads(os.getenv("LABELS", '["Question","Complaint","Suggestion","Praise","Bug Report","Feature Request","Urgent","Other"]'))
+SHUFFLE       = os.getenv("SHUFFLE", "False").lower() == "true"
+EXPORT_TOKEN  = os.getenv("EXPORT_TOKEN", "")
 if SHUFFLE:
     random.shuffle(LABELS)
 write_lock = threading.RLock()
@@ -228,7 +229,9 @@ def get_stats():
     }
 
 @app.get("/export")
-def export():
+def export(token: str = ""):
+    if EXPORT_TOKEN and token != EXPORT_TOKEN:
+        raise HTTPException(401, "Invalid or missing token")
     annotations = load_annotations()
     return [
         {
