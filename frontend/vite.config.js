@@ -6,6 +6,7 @@ export default defineConfig({
   define: {
     'import.meta.env.VITE_KEYBOARD_LAYOUT': JSON.stringify(process.env.KEYBOARD_LAYOUT || 'QWERTY'),
     'import.meta.env.VITE_SHUFFLE': JSON.stringify(process.env.SHUFFLE || 'False'),
+    'import.meta.env.VITE_APP_PASSWORD': JSON.stringify(process.env.APP_PASSWORD || ''),
   },
   server: {
     host: '0.0.0.0',

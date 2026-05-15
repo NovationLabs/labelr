@@ -66,6 +66,7 @@ docker compose up -d
 | `CHUNK_SIZE` | `10` | Number of items per labeler chunk |
 | `SHUFFLE` | `False` | Randomize label order at startup and after each submit (`True` or `False`) |
 | `EXPORT_TOKEN` | _(empty)_ | If set, required as `?token=` query param on `/export`. Leave empty to disable. |
+| `APP_PASSWORD` | _(empty)_ | If set, users must enter this password on the login screen. Leave empty to disable (no password input shown). |
 | `LABELS` | default set | JSON array of label strings |
 
 Example `LABELS`:

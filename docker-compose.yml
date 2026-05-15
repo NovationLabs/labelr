@@ -25,6 +25,7 @@ services:
       - ALLOWED_HOST=${ALLOWED_HOST:-localhost}
       - KEYBOARD_LAYOUT=${KEYBOARD_LAYOUT:-QWERTY}
       - SHUFFLE=${SHUFFLE:-False}
+      - APP_PASSWORD=${APP_PASSWORD:-}
     depends_on:
       - backend
     restart: unless-stopped

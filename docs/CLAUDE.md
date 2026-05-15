@@ -49,6 +49,7 @@ All runtime config lives in `.env` and is passed via `docker-compose.yml`. **No 
 | `CHUNK_SIZE` | `10` | backend/main.py |
 | `SHUFFLE` | `False` | backend/main.py (startup shuffle) + vite.config.js → `VITE_SHUFFLE` → App.jsx (per-submit shuffle) |
 | `EXPORT_TOKEN` | _(empty)_ | If set, `GET /export?token=` must match. Empty = no protection. |
+| `APP_PASSWORD` | _(empty)_ | If set, login screen shows a password input and validates it client-side. Empty = no password, no input rendered. |
 | `LABELS` | default set | backend/main.py — JSON array string |
 
 ### How env vars reach the frontend

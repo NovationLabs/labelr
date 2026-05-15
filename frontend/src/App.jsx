@@ -432,14 +432,26 @@ function StatsView({ stats, onRefresh }) {
 /* ─────────────────────────────────────────────────────────────
    LOGIN
    ───────────────────────────────────────────────────────────── */
+const APP_PASSWORD = import.meta.env.VITE_APP_PASSWORD || '';
+
 function LoginScreen({ onLogin }) {
-  const [pseudo, setPseudo] = useState("");
+  const [pseudo, setPseudo]   = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError]     = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!pseudo.trim()) return;
+    if (APP_PASSWORD && password !== APP_PASSWORD) {
+      setError(true);
+      return;
+    }
+    onLogin(pseudo.trim());
+  };
+
   return (
     <div className="login">
-      <form
-        className="login-form"
-        onSubmit={e => { e.preventDefault(); if (pseudo.trim()) onLogin(pseudo.trim()); }}
-      >
+      <form className="login-form" onSubmit={handleSubmit}>
         <h1 className="login-title">Labelr</h1>
         <p className="login-sub">Enter your name to start or resume.</p>
         <input
@@ -449,6 +461,16 @@ function LoginScreen({ onLogin }) {
           onChange={e => setPseudo(e.target.value)}
           autoFocus
         />
+        {APP_PASSWORD && (
+          <input
+            className={`login-input ${error ? "login-input--error" : ""}`}
+            placeholder="Password"
+            type="password"
+            value={password}
+            onChange={e => { setPassword(e.target.value); setError(false); }}
+          />
+        )}
+        {error && <p className="login-error">Incorrect password.</p>}
         <button className="login-submit" type="submit" disabled={!pseudo.trim()}>
           Start
         </button>
